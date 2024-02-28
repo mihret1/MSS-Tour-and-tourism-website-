@@ -6,7 +6,7 @@ import Portfolio from "./pages/Portfolio"
 import Registration from "./pages/Registration"
 import Service from "./pages/Service"
 import Footer from "./components/Footer"
-import NavBar from "./components/NavBar"
+// import NavBar from "./components/NavBar"
 import Auth from "./pages/Auth"
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
@@ -15,7 +15,7 @@ export default function App() {
   return (
    <>
     <BrowserRouter>
-        <NavBar />
+        {/* <NavBar /> */}
         
         <Routes>
           <Route  exact={true} path="/" element={<Home />}/>

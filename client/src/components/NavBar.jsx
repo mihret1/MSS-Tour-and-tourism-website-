@@ -6,7 +6,7 @@ function NavBar() {
   return (
 <>
 
-    <div  className="flex flex-row h-[90px]  items-center shadow-lg justify-between px-10 max-lg:px-4">
+    <div  className="bg-transparent flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4">
       <a href='/'>
       <div className='flex'>
         <img className='w-[65px] h-[65px] max-lg:w-[50px] max-lg:h-[50px]'  src={nav}/>
