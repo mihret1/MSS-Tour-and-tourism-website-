@@ -1,12 +1,30 @@
 
 import nav from '../assets/softnet.jpg'
+import { useState,useEffect } from "react"
 
 
 function NavBar() {
+  const [showColor,setShowColor]=useState(false)
+  
+  useEffect(()=>{
+     const handleScroll=()=>{
+      if(window.scrollY >=90){
+        setShowColor(true)
+      }else{
+        setShowColor(false)
+      }
+     }
+     window.addEventListener('scroll',handleScroll)
+     return ()=>{
+      window.removeEventListener('scroll',handleScroll)
+     }
+
+
+  },[])
   return (
 <>
 
-    <div  className="bg-transparent flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4">
+    <div  className=" fixed w-[100%] bg-white flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4">
       <a href='/'>
       <div className='flex'>
         <img className='w-[65px] h-[65px] max-lg:w-[50px] max-lg:h-[50px]'  src={nav}/>

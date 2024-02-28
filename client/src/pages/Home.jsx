@@ -3,9 +3,7 @@ import NavBar from "../components/NavBar"
 
 const Home=()=>{
     return(
-      <div className="h-[650px] 	 bg-gradient-to-br from-[#765ab7]  via-[#d2cbef]  to-[#7E66B9] "   
-      // style={{ backgroundImage:`url(${img1})`}}
-      >
+      <div className="h-[950px] 	 bg-gradient-to-br from-[#765ab7]  via-[#d2cbef]  to-[#7E66B9] "   >
         <NavBar />
       </div>  
     )
