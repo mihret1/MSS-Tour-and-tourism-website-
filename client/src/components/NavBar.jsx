@@ -9,7 +9,7 @@ function NavBar() {
 
   useEffect(()=>{
      const handleScroll=()=>{
-      if(window.scrollY >=80){
+      if(window.scrollY >=90){
         setShowColor(true)
       }else{
         setShowColor(false)
