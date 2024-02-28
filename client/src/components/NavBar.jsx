@@ -5,10 +5,11 @@ import { useState,useEffect } from "react"
 
 function NavBar() {
   const [showColor,setShowColor]=useState(false)
-  
+  // const [isFixed,setIsFixed]=useState(false)
+
   useEffect(()=>{
      const handleScroll=()=>{
-      if(window.scrollY >=90){
+      if(window.scrollY >=160){
         setShowColor(true)
       }else{
         setShowColor(false)
@@ -24,7 +25,7 @@ function NavBar() {
   return (
 <>
 
-    <div  className=" fixed w-[100%] bg-white flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4">
+    <div  className={`  ${showColor? "bg-white":"bg-transparent"}  ${showColor && "fixed"}  w-[100%]  flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4`}>
       <a href='/'>
       <div className='flex'>
         <img className='w-[65px] h-[65px] max-lg:w-[50px] max-lg:h-[50px]'  src={nav}/>
