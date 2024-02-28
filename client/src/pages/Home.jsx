@@ -2,7 +2,7 @@
 
 const Home=()=>{
     return(
-      <>home</>  
+      <div className="h-[550px] bg-black">home</div>  
     )
 }
 
