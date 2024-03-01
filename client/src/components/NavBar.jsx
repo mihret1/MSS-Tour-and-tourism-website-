@@ -25,7 +25,7 @@ function NavBar() {
   return (
 <>
 
-    <div  className={`  ${showColor? "bg-white":"bg-transparent"}  ${showColor && "fixed"}  w-[100%]  flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4`}>
+    <div  className={`  ${showColor? "bg-white":"bg-transparent"}  ${showColor && "fixed"} ${showColor && "shadow-lg"}  w-[100%]  flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4`}>
       <a href='/'>
       <div className='flex'>
         <img className='w-[65px] h-[65px] max-lg:w-[50px] max-lg:h-[50px]'  src={nav}/>
