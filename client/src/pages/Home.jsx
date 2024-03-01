@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar"
 import img1 from '../assets/h5.jpg'
 
 const Home=()=>{
+  
     return(
       <div className="m-0">
 
@@ -19,7 +20,7 @@ const Home=()=>{
               <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#9a87d2] to-[#eeecf4]  rounded-lg text-center text-xl	py-4 font-semibold ">Web Development</div>
               <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#7f62c2] to-white rounded-lg  text-center text-xl	py-4 font-semibold ">Mobile Development</div>
               <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#765ab7] to-white rounded-lg text-center text-xl	py-4 font-semibold">Graphics Designing</div>
-              <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#765ab7] to-white rounded-lg text-center text-xl	py-4 font-semibold">Training</div>           
+              <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#7e63bf] to-white rounded-lg text-center text-xl	py-4 font-semibold">Training</div>           
             </div>
          
           </div>
