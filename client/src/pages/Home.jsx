@@ -34,7 +34,7 @@ const Home=()=>{
 
         </div> 
 
-        <div className=" flex flex-row px-[2%] py-[2%] shadow-lg gap-7 max-lg:flex-col">
+        <div className=" flex flex-row px-[2%] py-[2%] shadow-lg gap-5 max-lg:flex-col">
              <img src={img2} className=" w-[53%] max-lg:w-[100%] "/>
              
              <div className=" flex flex-col gap-7 p-4">
@@ -58,7 +58,14 @@ const Home=()=>{
              </div>
         
         </div>
-           
+
+        <div className="flex flex-col gap-3 py-4 items-center rounded-xl bg-[#E9E0FF] mx-6">
+           <h1 className="text-2xl font-normal">Client</h1>
+           <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
+           <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
+            This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+
+        </div>   
       
       </div> 
     )
