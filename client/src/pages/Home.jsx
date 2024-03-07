@@ -4,7 +4,39 @@ import img2 from '../assets/s1.jpg'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import c1 from '../assets/client/client1.png'
+import c2 from '../assets/client/client2.png'
+import c3 from '../assets/client/client3.png'
+import c4 from '../assets/client/client4.png'
+import c7 from '../assets/client/client7.png'
+import c5 from '../assets/client/client5.png'
+import c6 from '../assets/client/client6.png'
+import c8 from '../assets/client/client8.png'
+import c9 from '../assets/client/client9.png'
+import c10 from '../assets/client/client10.png'
+import c11 from '../assets/client/client11.png'
+import c12 from '../assets/client/client12.png'
+
 const Home=()=>{
+  var settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+  };
+  var settings2 = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   
     return(
       <div className="m-0 flex flex-col gap-10">
@@ -59,13 +91,48 @@ const Home=()=>{
         
         </div>
 
-        <div className="flex flex-col gap-3 py-4 items-center rounded-xl bg-[#E9E0FF] mx-6">
+        <div className="flex flex-col gap-4 py-4 items-center rounded-xl bg-[#E9E0FF] mx-[1.1%]">
            <h1 className="text-2xl font-normal">Client</h1>
            <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
            <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
-            This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+                     This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+          <div className="w-[90%]  max-md:hidden">
+             <Slider {...settings} className="">
+               <div><img  className="w-32 h-28" src={c1}/></div> 
+               <div><img  className="w-32 h-28" src={c2}/></div> 
+               <div><img  className="w-32 h-28" src={c9}/></div> 
+               <div><img  className="w-32 h-28" src={c4}/></div> 
+               <div><img  className="w-32 h-28" src={c5}/></div> 
+               <div><img  className="w-32 h-28" src={c12}/></div> 
+               <div><img  className="w-32 h-28" src={c7}/></div> 
+               <div><img  className="w-32 h-28" src={c8}/></div> 
+               <div><img  className="w-32 h-28" src={c3}/></div> 
+               <div><img  className="w-32 h-28" src={c10}/></div> 
+               <div><img  className="w-32 h-28" src={c11}/></div> 
+               <div><img  className="w-32 h-28" src={c6}/></div> 
+             </Slider>
+          </div>
+          <div className="w-[90%] md:hidden px-2">
+             <Slider {...settings2} className="">
+               <div><img  className="w-32 h-28" src={c1}/></div> 
+               <div><img  className="w-32 h-28" src={c2}/></div> 
+               <div><img  className="w-32 h-28" src={c9}/></div> 
+               <div><img  className="w-32 h-28" src={c4}/></div> 
+               <div><img  className="w-32 h-28" src={c5}/></div> 
+               <div><img  className="w-32 h-28" src={c12}/></div> 
+               <div><img  className="w-32 h-28" src={c7}/></div> 
+               <div><img  className="w-32 h-28" src={c8}/></div> 
+               <div><img  className="w-32 h-28" src={c3}/></div> 
+               <div><img  className="w-32 h-28" src={c10}/></div> 
+               <div><img  className="w-32 h-28" src={c11}/></div> 
+               <div><img  className="w-32 h-28" src={c6}/></div> 
+             </Slider>
+          </div>
 
-        </div>   
+       
+        </div>  
+       
+       
       
       </div> 
     )
