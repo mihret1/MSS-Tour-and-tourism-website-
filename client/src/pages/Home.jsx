@@ -91,7 +91,7 @@ const Home=()=>{
         
         </div>
 
-        <div className="flex flex-col gap-4 py-4 items-center rounded-xl bg-[#E9E0FF] mx-[1.1%]">
+        <div className="flex flex-col gap-4 py-4 items-center rounded-lg shadow-lg bg-[#E9E0FF] mx-[1.1%]">
            <h1 className="text-2xl font-normal">Client</h1>
            <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
            <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
