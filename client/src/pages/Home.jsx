@@ -95,7 +95,7 @@ const Home=()=>{
            <h1 className="text-2xl font-normal">Client</h1>
            <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
            <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
-                     This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+                    This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
           <div className="w-[90%]  max-md:hidden">
              <Slider {...settings} className="">
                <div><img  className="w-32 h-28" src={c1}/></div> 
