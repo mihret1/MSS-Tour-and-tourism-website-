@@ -27,7 +27,7 @@ import dev2 from '../assets/dev2.jpg'
 import con1 from '../assets/con1.jpg'
 import tra from '../assets/tra.jpg'
 
-import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
+// import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
 import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 
 const Home=()=>{
@@ -215,10 +215,10 @@ const Home=()=>{
               Softnet takes pride in providing comprehensive and accessible technology training programs.  </p>
             <h1 className="text-2xl font-semibold">Ourses We Give</h1>
             <div className="flex flex-col text-lg md:max-lg:text-md ">
-                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">Prioritizing your needs</span></div>
-                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]" >Better Solutions</span></div>
-                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">comprehensive technology training,</span></div>
-                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">positive impact on people`s lives.</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold ">Prioritizing your needs</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold " >Better Solutions</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold ">comprehensive technology training,</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold ">positive impact on people`s lives.</span></div>
             </div>
             <div className="flex flex-row gap-3">
             <button className="px-6 bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
