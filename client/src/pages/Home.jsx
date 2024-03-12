@@ -25,6 +25,7 @@ import t1 from '../assets/t1.jpg'
 import inf1 from '../assets/inf.jpg'
 import dev2 from '../assets/dev2.jpg'
 import con1 from '../assets/con1.jpg'
+import tra from '../assets/tra.jpg'
 
 import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
 import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
@@ -141,7 +142,7 @@ const Home=()=>{
        
         </div>  
        
-       <div className="flex flex-col gap-8 shadow-lg p-5">
+       <div className="flex flex-col gap-8  p-5">
           <h1 className="text-3xl font-bold text-center">Our Services</h1>
           
           <div className="flex flex-row gap-5 justify-center">
@@ -202,6 +203,31 @@ const Home=()=>{
                 </p>
                 <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%]  ">
+          <div className="w-[42%] max-md:w-[100%]"><img src={tra} className="h-[510px] w-[100%]"/></div> 
+          <div className="w-[45%] max-md:w-[100%] flex flex-col gap-6">
+            <h1 className="text-3xl font-semibold ">Technology Trainings</h1>
+            <p className="text-xl  font-semibold md:max-lg:text-lg ">With over 20 years of experience in delivering technology trainings in Ethiopia, 
+              Softnet takes pride in providing comprehensive and accessible technology training programs.  </p>
+            <h1 className="text-2xl font-semibold">Ourses We Give</h1>
+            <div className="flex flex-col text-lg md:max-lg:text-md ">
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">Prioritizing your needs</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]" >Better Solutions</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">comprehensive technology training,</span></div>
+                  <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">positive impact on people`s lives.</span></div>
+            </div>
+            <div className="flex flex-row gap-3">
+            <button className="px-6 bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
+                  Register 
+            </button>
+
+            <button className="px-6  bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
+                  Read More 
+            </button>
             </div>
           </div>
         </div>
