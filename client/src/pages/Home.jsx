@@ -4,7 +4,6 @@ import img2 from '../assets/s1.jpg'
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,6 +20,13 @@ import c9 from '../assets/client/client9.png'
 import c10 from '../assets/client/client10.png'
 import c11 from '../assets/client/client11.png'
 import c12 from '../assets/client/client12.png'
+import s1 from '../assets/setting.jpg'
+import t1 from '../assets/t1.jpg'
+import inf1 from '../assets/inf.jpg'
+import inf2 from '../assets/inf2.png'
+
+import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
+import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 
 const Home=()=>{
   var settings = {
@@ -37,6 +43,8 @@ const Home=()=>{
     slidesToShow: 3,
     slidesToScroll: 1,
   };
+
+  let num=[1,1,1,1,1,1,1,1,1,1,1];
   
     return(
       <div className="m-0 flex flex-col gap-10">
@@ -132,7 +140,73 @@ const Home=()=>{
        
         </div>  
        
-       
+       <div className="flex flex-col gap-8 shadow-lg p-5">
+          <h1 className="text-3xl font-bold text-center">Our Services</h1>
+          
+          <div className="flex flex-row gap-5 justify-center">
+
+            <div className="flex flex-row items-center max-md:hidden">
+              {num.map((e)=>(<h1><HorizontalRuleSharp /></h1>))}
+            </div>
+            <img src={s1} className="w-[160px] h-26"/> 
+            <div className="flex flex-row items-center max-md:hidden">
+              {num.map((e)=>(<h1><HorizontalRuleSharp /></h1>))}
+            </div>
+          
+          </div>
+
+          <div className="grid grid-cols-2 max-md:grid-cols-1 justify-center	px-[4%] gap-y-12 gap-x-20">
+
+            <div className="flex flex-row gap-2">
+              <img src={t1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Technolgy Training</h1>
+                <p>From coding to web development,
+                   we offer specialized programs for all age groups,
+                    starting as young as 10 years old
+                </p>
+                <a href='/service' className="text-purple-700  font-semibold">Learn More</a>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-2">
+              <img src={t1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Technolgy Training</h1>
+                <p>From coding to web development,
+                   we offer specialized programs for all age groups,
+                    starting as young as 10 years old
+                </p>
+                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-2">
+              <img src={t1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Technolgy Training</h1>
+                <p>From coding to web development,
+                   we offer specialized programs for all age groups,
+                    starting as young as 10 years old
+                </p>
+                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-2">
+              <img src={inf1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Infrastructure supply and Deployment</h1>
+                <p>End-to-end services
+                   guaranteeing seamless integration and optimal 
+                   performance of your technology infrastructure.
+                </p>
+                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
       
       </div> 
     )
