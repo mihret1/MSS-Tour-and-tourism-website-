@@ -207,7 +207,7 @@ const Home=()=>{
           </div>
         </div>
 
-        <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%]  ">
+        <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%]">
           <div className="w-[42%] max-md:w-[100%]"><img src={tra} className="h-[510px] w-[100%]"/></div> 
           <div className="w-[45%] max-md:w-[100%] flex flex-col gap-6">
             <h1 className="text-3xl font-semibold ">Technology Trainings</h1>
