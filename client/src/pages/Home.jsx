@@ -23,7 +23,8 @@ import c12 from '../assets/client/client12.png'
 import s1 from '../assets/setting.jpg'
 import t1 from '../assets/t1.jpg'
 import inf1 from '../assets/inf.jpg'
-import inf2 from '../assets/inf2.png'
+import dev2 from '../assets/dev2.jpg'
+import con1 from '../assets/con1.jpg'
 
 import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
 import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
@@ -155,7 +156,7 @@ const Home=()=>{
           
           </div>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 justify-center	px-[4%] gap-y-12 gap-x-20">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 justify-center	px-[2%] gap-y-12 gap-x-24">
 
             <div className="flex flex-row gap-2">
               <img src={t1} className="w-[110px] h-24"/>
@@ -170,28 +171,15 @@ const Home=()=>{
             </div>
 
             <div className="flex flex-row gap-2">
-              <img src={t1} className="w-[110px] h-24"/>
+              <img src={dev2} className="w-[110px] h-24"/>
               <div>
-                <h1 className="text-xl font-semibold">Technolgy Training</h1>
-                <p>From coding to web development,
-                   we offer specialized programs for all age groups,
-                    starting as young as 10 years old
+                <h1 className="text-xl font-semibold">Software Development</h1>
+                <p>We craft scalable, secure, and user-friendly
+                   software applications to enhance productivity and streamline your business processes
                 </p>
                 <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
               </div>
-            </div>
-
-            <div className="flex flex-row gap-2">
-              <img src={t1} className="w-[110px] h-24"/>
-              <div>
-                <h1 className="text-xl font-semibold">Technolgy Training</h1>
-                <p>From coding to web development,
-                   we offer specialized programs for all age groups,
-                    starting as young as 10 years old
-                </p>
-                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
-              </div>
-            </div>
+            </div>         
 
             <div className="flex flex-row gap-2">
               <img src={inf1} className="w-[110px] h-24"/>
@@ -205,6 +193,16 @@ const Home=()=>{
               </div>
             </div>
 
+            <div className="flex flex-row gap-2">
+              <img src={con1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">TInformation Technology outsourcing (ITO)</h1>
+                <p>Softnet, your ultimate partner for 
+                  outsourced services that redefine excellence. Dive into a realm where professionalism
+                </p>
+                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       
