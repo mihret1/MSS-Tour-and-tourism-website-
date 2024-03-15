@@ -73,5 +73,9 @@ button:focus-visible {
 
 
 
-
+@layer utilities{
+  .button{
+    @apply  border-[1px] px-7 py-1 border-purple-600 rounded-md 
+  }
+}
 

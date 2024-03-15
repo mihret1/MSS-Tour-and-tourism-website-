@@ -27,8 +27,22 @@ import dev2 from '../assets/dev2.jpg'
 import con1 from '../assets/con1.jpg'
 import tra from '../assets/tra.jpg'
 
-// import HorizontalRuleSharpIcon from '@mui/icons-material/HorizontalRuleSharp';
+import i1 from '../assets/p/p4.jpg'
+import i2 from '../assets/p/p12.jpg'
+import i3 from '../assets/p/p11.png'
+import i4 from '../assets/p/p10.png'
+import i5 from '../assets/p/p5.jpg'
+import i6 from '../assets/p/p1.jpg'
+import i7 from '../assets/p/p7.jpg'
+import i8 from '../assets/p/p3.jpg'
+import i9 from '../assets/p/p8.jpg'
+
+
+
+
+
 import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
+import { useState } from "react";
 
 const Home=()=>{
   var settings = {
@@ -46,8 +60,11 @@ const Home=()=>{
     slidesToScroll: 1,
   };
 
-  let num=[1,1,1,1,1,1,1,1,1,1,1];
   
+
+  let num=[1,1,1,1,1,1,1,1,1,1,1];
+  const [p,setP]=useState(1)
+
     return(
       <div className="m-0 flex flex-col gap-10">
 
@@ -207,7 +224,7 @@ const Home=()=>{
           </div>
         </div>
 
-        <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%]">
+        <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%] shadow-lg">
           <div className="w-[42%] max-md:w-[100%]"><img src={tra} className="h-[510px] w-[100%]"/></div> 
           <div className="w-[45%] max-md:w-[100%] flex flex-col gap-6">
             <h1 className="text-3xl font-semibold ">Technology Trainings</h1>
@@ -230,6 +247,64 @@ const Home=()=>{
             </button>
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-5 mt-16">
+          <h1 className=" text-2xl font-semibold  text-[#755BB4]">What We Have Done So Far?</h1>
+          <div className="flex flex-row gap-4 text-lg font-semibold ">
+             <button 
+             style={{ ...(p===1 && {backgroundColor:'#755BB4'}) }}
+            className="button" 
+            onClick={()=>setP(1)}>All</button>
+             <button 
+              style={{ ...(p===2 && {backgroundColor:'#755BB4'}) }}
+
+             className="button" onClick={()=>setP(2)}>Web</button>
+             <button 
+             style={{ ...(p===3 && {backgroundColor:'#755BB4'}) }}
+             className="button" onClick={()=>setP(3)}>Mobile</button>
+             <button 
+             style={{ ...(p===4 && {backgroundColor:'#755BB4'}) }}
+             className="button" onClick={()=>setP(4)}>Training</button>
+             <button 
+             style={{ ...(p===5 && {backgroundColor:'#755BB4'}) }}
+             className="button" onClick={()=>setP(5)}>Infrustructure</button>
+             <button 
+             style={{ ...(p===6 && {backgroundColor:'#755BB4'}) }}
+             className="button" onClick={()=>setP(6)}>ITO</button>
+          </div>
+         <div className="w-[70%]">
+          
+          { ( p===1 || p===3) && <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+            <img src={i5} className="h-52 w-[400px]"/>
+            <img src={i3} className="h-52 w-[350px]"/>
+            <img src={i2} className="h-52 w-[400px]"/>
+            <img src={i4} className="h-52 w-[350px]"/>
+            <img src={i1} className="h-52 w-[400px]"/>   
+            <img src={i6} className="h-52 w-[350px]"/>
+            <img src={i7} className="h-52 w-[400px]"/>
+            <img src={i8} className="h-52 w-[350px]"/>
+            <img src={i9} className="h-52 w-[400px]"/> 
+          </div>}
+
+          { (p===2 || p===5) && <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+            <img src={i9} className="h-52 w-[400px]"/>
+            <img src={i7} className="h-52 w-[350px]"/>
+            <img src={i5} className="h-52 w-[400px]"/>
+            <img src={i4} className="h-52 w-[350px]"/>
+            <img src={i1} className="h-52 w-[400px]"/>   
+            
+          </div>}
+
+          { (p===4 || p===6 )&& <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+            <img src={i8} className="h-52 w-[400px]"/>
+            <img src={i3} className="h-52 w-[350px]"/>
+            <img src={i2} className="h-52 w-[400px]"/>
+            
+          </div>}
+       
+        </div>
+
         </div>
       
       </div> 
