@@ -251,7 +251,7 @@ const Home=()=>{
 
         <div className="flex flex-col items-center gap-5 mt-16">
           <h1 className=" text-2xl font-semibold  text-[#755BB4]">What We Have Done So Far?</h1>
-          <div className="flex flex-row gap-4 text-lg font-semibold ">
+          <div className="flex flex-row gap-4 text-lg font-semibold max-md:grid max-md:grid-cols-3 md:max-lg:gap-2 p-2 ">
              <button 
              style={{ ...(p===1 && {backgroundColor:'#755BB4'}) }}
             className="button" 
@@ -275,7 +275,7 @@ const Home=()=>{
           </div>
          <div className="w-[70%]">
           
-          { ( p===1 || p===3) && <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+          { ( p===1 || p===3) && <div className=" grid grid-cols-3 max-sm:grid-cols-1  sm:max-ml:grid-cols-2  gap-x-3 gap-y-3 items-center justify-center">
             <img src={i5} className="h-52 w-[400px]"/>
             <img src={i3} className="h-52 w-[350px]"/>
             <img src={i2} className="h-52 w-[400px]"/>
@@ -287,7 +287,7 @@ const Home=()=>{
             <img src={i9} className="h-52 w-[400px]"/> 
           </div>}
 
-          { (p===2 || p===5) && <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+          { (p===2 || p===5) && <div className=" grid grid-cols-3 max-sm:grid-cols-1 sm:max-ml:grid-cols-2  gap-x-3 gap-y-3 items-center justify-center">
             <img src={i9} className="h-52 w-[400px]"/>
             <img src={i7} className="h-52 w-[350px]"/>
             <img src={i5} className="h-52 w-[400px]"/>
@@ -296,7 +296,7 @@ const Home=()=>{
             
           </div>}
 
-          { (p===4 || p===6 )&& <div className=" grid grid-cols-3   gap-x-3 gap-y-3 items-center justify-center">
+          { (p===4 || p===6 )&& <div className=" grid grid-cols-3 max-sm:grid-cols-1 sm:max-ml:grid-cols-2  gap-x-3 gap-y-3 items-center justify-center">
             <img src={i8} className="h-52 w-[400px]"/>
             <img src={i3} className="h-52 w-[350px]"/>
             <img src={i2} className="h-52 w-[400px]"/>
