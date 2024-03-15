@@ -40,8 +40,7 @@ import i9 from '../assets/p/p8.jpg'
 
 
 
-
-import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
+import GroupsIcon from '@mui/icons-material/Groups';import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 import { useState } from "react";
 
 const Home=()=>{
@@ -67,7 +66,7 @@ const Home=()=>{
 
     return(
       <div className="m-0 flex flex-col gap-10">
-
+         {/* part one */}
         <div className="h-[665px] shadow-lg	 bg-gradient-to-br from-[#7457b8]  via-[#d2cbef] via-70%  to-[#7E66B9] "   >
           <NavBar />
 
@@ -92,7 +91,8 @@ const Home=()=>{
           </div>
 
         </div> 
-
+         
+         {/* part two */}
         <div className=" flex flex-row px-[2%] py-[2%] shadow-lg gap-5 max-lg:flex-col">
              <img src={img2} className=" w-[53%] max-lg:w-[100%] "/>
              
@@ -118,6 +118,7 @@ const Home=()=>{
         
         </div>
 
+         {/* part Three */}
         <div className="flex flex-col gap-4 py-4 items-center rounded-lg shadow-lg bg-[#E9E0FF] mx-[1.1%]">
            <h1 className="text-2xl font-normal">Client</h1>
            <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
@@ -158,8 +159,9 @@ const Home=()=>{
 
        
         </div>  
-       
-       <div className="flex flex-col gap-8  p-5">
+        
+          {/* part four */}
+        <div className="flex flex-col gap-8  p-5">
           <h1 className="text-3xl font-bold text-center">Our Services</h1>
           
           <div className="flex flex-row gap-5 justify-center">
@@ -223,7 +225,8 @@ const Home=()=>{
             </div>
           </div>
         </div>
-
+          
+          {/* part five */}
         <div className="flex flex-row max-md:flex-col  gap-16 mt-20 px-[6%] shadow-lg">
           <div className="w-[42%] max-md:w-[100%]"><img src={tra} className="h-[510px] w-[100%]"/></div> 
           <div className="w-[45%] max-md:w-[100%] flex flex-col gap-6">
@@ -248,7 +251,8 @@ const Home=()=>{
             </div>
           </div>
         </div>
-
+         
+         {/* part six */}
         <div className="flex flex-col items-center gap-5 mt-16">
           <h1 className=" text-2xl font-semibold  text-[#755BB4]">What We Have Done So Far?</h1>
           <div className="flex flex-row gap-4 text-lg font-semibold max-md:grid max-md:grid-cols-3 md:max-lg:gap-2 p-2 ">
@@ -307,6 +311,33 @@ const Home=()=>{
 
         </div>
       
+      {/* part seven */}
+       <div className="h-72  bg-[#E9E0FF] mx-[6%]  md:max-ml:mx-[2%] pt-5 max-md:h-[650px] ">
+           <h1 className="text-2xl pl-5 font-semibold">Success in Number</h1>
+          <div className="flex flex-row justify-center gap-4 items-center max-md:flex-col">
+           
+           <div className=" flex justify-center items-center gap-4 border-4	pl-5 border-[#755BB4] rounded-[50%] w-56 h-44">
+              <GroupsIcon  sx={{ fontSize:59 }}/>
+              <div className="h-32 w-[2px] bg-[#755BB4]"></div>
+              <h1 className=" text-lg font-bold  flex flex-col  "><span className="text-2xl ">20,000</span>Happy Client</h1>
+           </div>
+
+           <div className=" flex justify-center items-center gap-4 border-4	pl-4 border-[#755BB4] rounded-[50%] w-56 h-44">
+              <GroupsIcon  sx={{ fontSize:59 }}/>
+              <div className="h-32 w-[2px] bg-[#755BB4]"></div>
+              <h1 className=" text-lg font-bold  flex flex-col  "><span className="text-2xl ">3000</span>Projects Completed</h1>
+           </div>
+
+           <div className=" flex justify-center items-center gap-4 border-4	pl-4 border-[#755BB4] rounded-[50%] w-56 h-44">
+              <GroupsIcon  sx={{ fontSize:59 }}/>
+              <div className="h-32 w-[2px] bg-[#755BB4]"></div>
+              <h1 className=" text-lg font-bold  flex flex-col  "><span className="text-2xl ">14,000</span>Projects Completed</h1>
+           </div>
+        </div> 
+       </div>
+
+
+
       </div> 
     )
 }
