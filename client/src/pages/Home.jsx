@@ -338,6 +338,7 @@ const Home=()=>{
        </div>
       
 
+
       {/* part eight */}
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-bold text-2xl">Latest Update</h1>
