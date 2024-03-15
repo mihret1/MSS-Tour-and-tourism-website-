@@ -36,10 +36,11 @@ import i6 from '../assets/p/p1.jpg'
 import i7 from '../assets/p/p7.jpg'
 import i8 from '../assets/p/p3.jpg'
 import i9 from '../assets/p/p8.jpg'
+import news from '../assets/news.jpg'
+import cal1 from '../assets/cal1.png'
 
-
-
-
+import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
+import EventNoteIcon from '@mui/icons-material/EventNote';
 import GroupsIcon from '@mui/icons-material/Groups';import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 import { useState } from "react";
 
@@ -311,7 +312,7 @@ const Home=()=>{
 
         </div>
       
-      {/* part seven */}
+         {/* part seven */}
        <div className="h-72  bg-[#E9E0FF] mx-[6%]  md:max-ml:mx-[2%] pt-5 max-md:h-[650px] ">
            <h1 className="text-2xl pl-5 font-semibold">Success in Number</h1>
           <div className="flex flex-row justify-center gap-4 items-center max-md:flex-col">
@@ -323,19 +324,59 @@ const Home=()=>{
            </div>
 
            <div className=" flex justify-center items-center gap-4 border-4	pl-4 border-[#755BB4] rounded-[50%] w-56 h-44">
-              <GroupsIcon  sx={{ fontSize:59 }}/>
+              <EventNoteIcon  sx={{ fontSize:59 }}/>
               <div className="h-32 w-[2px] bg-[#755BB4]"></div>
               <h1 className=" text-lg font-bold  flex flex-col  "><span className="text-2xl ">3000</span>Projects Completed</h1>
            </div>
 
            <div className=" flex justify-center items-center gap-4 border-4	pl-4 border-[#755BB4] rounded-[50%] w-56 h-44">
-              <GroupsIcon  sx={{ fontSize:59 }}/>
+              <AccessAlarmsIcon  sx={{ fontSize:59 }}/>
               <div className="h-32 w-[2px] bg-[#755BB4]"></div>
               <h1 className=" text-lg font-bold  flex flex-col  "><span className="text-2xl ">14,000</span>Projects Completed</h1>
            </div>
         </div> 
        </div>
+      
 
+      {/* part eight */}
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="font-bold text-2xl">Latest Update</h1>
+        <img src={news}/>
+        <div className="flex flex-row max-sm:flex-col sm:max-ml:grid sm:max-ml:grid-cols-2 w-[80%]  gap-10">
+           <div>
+            <img src={i5} className="w-[100%]"/>
+             <div className="bg-[#E9E0FF] p-3">
+             <img src={cal1} className="w-10 h-10"/>
+             <p className="text-center font-semibold">
+             We are accepting new students starting from January  12, 2024
+             </p>
+             </div>
+
+           </div>
+
+           <div >
+            <img src={i2}  className="w-[100%]"/>
+             <div className="bg-[#E9E0FF] p-3">
+             <img src={cal1} className="w-10 h-10"/>
+             <p className="text-center font-semibold">
+             We are accepting new students starting from January  12, 2024
+             </p>
+             </div>
+
+           </div>
+
+           <div>
+            <img src={i5}  className="w-[100%]"/>
+             <div className="bg-[#E9E0FF] p-3">
+             <img src={cal1} className="w-10 h-10"/>
+             <p className="text-center font-semibold">
+             We are accepting new students starting from January  12, 2024
+             </p>
+             </div>
+
+           </div>
+        </div>
+      </div>
 
 
       </div> 
