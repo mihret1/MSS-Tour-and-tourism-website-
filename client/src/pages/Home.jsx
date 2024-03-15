@@ -38,6 +38,7 @@ import i8 from '../assets/p/p3.jpg'
 import i9 from '../assets/p/p8.jpg'
 import news from '../assets/news.jpg'
 import cal1 from '../assets/cal1.png'
+import pp from '../assets/pp.jpg'
 
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import EventNoteIcon from '@mui/icons-material/EventNote';
@@ -384,6 +385,27 @@ const Home=()=>{
       
       </div>
 
+
+     {/* part nine */}
+     <div className="flex flex-row gap-8 bg-[#E9E0FF] mx-[3%] h-80 p-[2%]">
+        <div className="w-[40%]">
+          <h1 className="text-3xl font-bold pb-3">Testimonials</h1>
+          <p className="text-xl">A testimonial is an honest endorsement of your product or 
+            service that usually comes from a customer, colleague, 
+            or peer who has benefited from or experienced success as a
+             result of the work you did for them.</p>
+        </div>
+        <div className="bg-white w-[60%] rounded-lg">
+          <div className="flex">
+            <img src={pp}  className=" rounded-full w-16 h-16"/>
+            <div>
+              <h1>Mihiret Desalegn</h1>
+              <h1>Store Owner</h1>
+            </div>
+          </div>
+            
+        </div>
+     </div>
 
       </div> 
     )
