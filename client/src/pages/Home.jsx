@@ -341,21 +341,24 @@ const Home=()=>{
 
       {/* part eight */}
       <div className="flex flex-col justify-center items-center">
+        
         <h1 className="font-bold text-2xl">Latest Update</h1>
         <img src={news}/>
         <div className="flex flex-row max-sm:flex-col sm:max-ml:grid sm:max-ml:grid-cols-2 w-[80%]  gap-10">
-           <div>
+           <div className="hover:shadow-2xl">
+            <a href="/">
             <img src={i5} className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
-             <img src={cal1} className="w-10 h-10"/>
-             <p className="text-center font-semibold">
-             We are accepting new students starting from January  12, 2024
-             </p>
+              <img src={cal1} className="w-10 h-10"/>
+              <p className="text-center font-semibold">
+              We are accepting new students starting from January  12, 2024
+              </p>
              </div>
-
+            </a>
            </div>
 
-           <div >
+           <div  className="hover:shadow-2xl" >
+           <a href="/">
             <img src={i2}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
              <img src={cal1} className="w-10 h-10"/>
@@ -363,10 +366,11 @@ const Home=()=>{
              We are accepting new students starting from January  12, 2024
              </p>
              </div>
-
+             </a>
            </div>
 
-           <div>
+           <div className="hover:shadow-xl">
+           <a href="/">
             <img src={i5}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
              <img src={cal1} className="w-10 h-10"/>
@@ -374,9 +378,10 @@ const Home=()=>{
              We are accepting new students starting from January  12, 2024
              </p>
              </div>
-
+             </a>
            </div>
         </div>
+      
       </div>
 
 
