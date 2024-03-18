@@ -19,6 +19,8 @@ export default {
   theme: {
     extend: {
       screens:{
+        'xs':'360px',
+        'xss':'460px',
         'ml':'860px'
       }
     },

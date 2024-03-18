@@ -44,6 +44,7 @@ import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import GroupsIcon from '@mui/icons-material/Groups';import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 import { useState } from "react";
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const Home=()=>{
   var settings = {
@@ -364,7 +365,7 @@ const Home=()=>{
              <div className="bg-[#E9E0FF] p-3">
              <img src={cal1} className="w-10 h-10"/>
              <p className="text-center font-semibold">
-             We are accepting new students starting from January  12, 2024
+             We are Accepting new students starting from January  12, 2024
              </p>
              </div>
              </a>
@@ -387,24 +388,36 @@ const Home=()=>{
 
 
      {/* part nine */}
-     <div className="flex flex-row gap-8 bg-[#E9E0FF] mx-[3%] h-80 p-[2%]">
-        <div className="w-[40%]">
+     <div className="flex flex-row gap-8 bg-[#E9E0FF] mx-[3%] h-80 xss:max-md:h-[540px]  xs:max-xss:h-[660px]  p-[2%]  max-md:flex-col">
+        <div className="w-[40%] max-md:w-[95%]">
           <h1 className="text-3xl font-bold pb-3">Testimonials</h1>
           <p className="text-xl">A testimonial is an honest endorsement of your product or 
             service that usually comes from a customer, colleague, 
             or peer who has benefited from or experienced success as a
              result of the work you did for them.</p>
         </div>
-        <div className="bg-white w-[60%] rounded-lg">
-          <div className="flex">
+        <div className="bg-white w-[60%] rounded-lg p-5 max-md:w-[95%]">
+          <div className="flex gap-4">
             <img src={pp}  className=" rounded-full w-16 h-16"/>
-            <div>
-              <h1>Mihiret Desalegn</h1>
+            <div className="font-semibold">
+              <h1 className="text-xl">Mihiret Desalegn</h1>
               <h1>Store Owner</h1>
             </div>
           </div>
+          <div>
+           
+              <p className=" font-medium">
+              <FormatQuoteIcon color="secondary" fontSize="large"/>   Duis aute irure dolor in reprehenderit in voluptate velit esse 
+              cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident.Duis aute irure dolor in
+                reprehenderit in voluptate velit esse 
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+               <FormatQuoteIcon color="secondary" fontSize="large"/> </p> 
+            
+          </div>
             
         </div>
+    
      </div>
 
       </div> 
