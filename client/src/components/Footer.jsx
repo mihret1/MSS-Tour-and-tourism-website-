@@ -22,7 +22,7 @@ function Footer() {
 
       </div>
       
-      <div className='grid grid-cols-5 px-5 justify-center mt-3 font-medium'>       
+      <div className='grid grid-cols-5 px-5 justify-center mt-3 font-medium max-lg:gap-y-7 max-sm:grid-cols-1 sm:max-md:grid-cols-2 md:max-ml:grid-cols-3 ml:max-lg:grid-cols-4 '>       
         
         
         <div className=' flex  flex-col gap-5 text-lg justify-self-center '>
