@@ -6,6 +6,7 @@ import { useState,useEffect } from "react"
 function NavBar() {
   const [showColor,setShowColor]=useState(false)
   // const [isFixed,setIsFixed]=useState(false)
+  const [hoverAdd, setHoverAdd]=useState(0)
 
   useEffect(()=>{
      const handleScroll=()=>{
@@ -39,11 +40,11 @@ function NavBar() {
       </a>
       <nav className={`flex flex-row md:max-lg:gap-5 gap-6 max-md:hidden   ${!showColor &&'text-white' } `}>
 
-        <a href='/' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}>Home</a>
-        <a href='/aboutus' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>About-Us</div></a>
-        <a href='/Service' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Service</div></a>
-        <a href='/portfolio' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Portfolio</div></a>
-        <a href='/blog' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Blog</div></a>
+        <a href='/' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(1)} onMouseLeave={()=>setHoverAdd(0)}><div>Home {(hoverAdd===1  && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
+        <a href='/aboutus' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(2)} onMouseLeave={()=>setHoverAdd(0)}><div>About-Us {(hoverAdd===2 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
+        <a href='/Service' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(3)} onMouseLeave={()=>setHoverAdd(0)}><div>Service {(hoverAdd===3 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
+        <a href='/portfolio' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(4)} onMouseLeave={()=>setHoverAdd(0)}><div>Portfolio {(hoverAdd===4 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
+        <a href='/blog' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(5)} onMouseLeave={()=>setHoverAdd(0)}><div>Blog {(hoverAdd===5 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
 
       </nav>
       <button type="button" className={`max-md:hidden md:max-lg:px-5 md:max-lg:py-2 rounded-full  ${!showColor ? 'bg-white':'bg-black'} ${!showColor ? 'text-[#8660df]':'text-white '}  py-2 px-7 font-bold text-xl`}>Contact</button>
