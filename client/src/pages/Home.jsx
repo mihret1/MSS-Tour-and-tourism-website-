@@ -45,6 +45,10 @@ import EventNoteIcon from '@mui/icons-material/EventNote';
 import GroupsIcon from '@mui/icons-material/Groups';import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 import { useState } from "react";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import CircleIcon from '@mui/icons-material/Circle';
+import { IconButton } from "@mui/material";
+
+
 
 const Home=()=>{
   var settings = {
@@ -66,6 +70,7 @@ const Home=()=>{
 
   let num=[1,1,1,1,1,1,1,1,1,1,1];
   const [p,setP]=useState(1)
+  const [t,setT]=useState(1)
 
     return(
       <div className="m-0 flex flex-col gap-10">
@@ -388,7 +393,7 @@ const Home=()=>{
 
 
      {/* part nine */}
-     <div className="flex flex-row gap-8 bg-[#E9E0FF] mx-[3%] h-80 xss:max-md:h-[540px]  xs:max-xss:h-[660px]  p-[2%]  max-md:flex-col">
+     <div className="flex flex-row gap-8 bg-[#E9E0FF] mx-[3%] h-80 md:max-ml:h-96  xss:max-md:h-[560px]  xs:max-xss:h-[660px]  p-[2%]  max-md:flex-col">
         <div className="w-[40%] max-md:w-[95%]">
           <h1 className="text-3xl font-bold pb-3">Testimonials</h1>
           <p className="text-xl">A testimonial is an honest endorsement of your product or 
@@ -397,6 +402,7 @@ const Home=()=>{
              result of the work you did for them.</p>
         </div>
         <div className="bg-white w-[60%] rounded-lg p-5 max-md:w-[95%]">
+         
           <div className="flex gap-4">
             <img src={pp}  className=" rounded-full w-16 h-16"/>
             <div className="font-semibold">
@@ -406,14 +412,28 @@ const Home=()=>{
           </div>
           <div>
            
-              <p className=" font-medium">
-              <FormatQuoteIcon color="secondary" fontSize="large"/>   Duis aute irure dolor in reprehenderit in voluptate velit esse 
+              <p className=" font-medium ml:px-6 lg:text-base">
+              <FormatQuoteIcon color="secondary" fontSize="large"/>
+
+              {(t===1 || t===3) && `Duis autee irure dolor in reprehenderit in voluptate velit esse 
               cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident.Duis aute irure dolor in
-                reprehenderit in voluptate velit esse 
-               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              Excepteur sint occaecat cupidatat non proident.Duis aute irure dolor in
+              reprehenderit in voluptate velit esse 
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident`}.
+              { (t===2 || t===4) && `There are many variations of passages of Lorem Ipsum available,
+               but the majority have suffered alteration in some form, 
+              by injected humour, or randomised words which don't look even slightly believable. 
+              If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+              anything embarrassing hidden in the middle of text.` }
+
                <FormatQuoteIcon color="secondary" fontSize="large"/> </p> 
             
+          </div>
+          <div className="flex justify-center gap-1 ">
+             <button onClick={()=>setT(1)}> <CircleIcon   sx={{fontSize:15, ...(t===1 ? {color:'purple'}:{color:'gray'})}}/></button>
+             <button onClick={()=>setT(2)}> <CircleIcon  sx={{fontSize:15,...(t===2 ? {color:'purple'}:{color:'gray'})}}/></button>
+             <button onClick={()=>setT(3)}> <CircleIcon sx={{fontSize:15,...(t===3 ? {color:'purple'}:{color:'gray'})}}/></button>
+             <button onClick={()=>setT(4)}> <CircleIcon sx={{fontSize:15 ,...(t===4 ? {color:'purple'}:{color:'gray'})}}/></button>
           </div>
             
         </div>
