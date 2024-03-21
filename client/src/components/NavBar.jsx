@@ -9,7 +9,7 @@ function NavBar() {
 
   useEffect(()=>{
      const handleScroll=()=>{
-      if(window.scrollY >=90){
+      if(window.scrollY >=100){
         setShowColor(true)
       }else{
         setShowColor(false)
@@ -37,13 +37,13 @@ function NavBar() {
        
       </div>
       </a>
-      <nav className={`flex flex-row md:max-lg:gap-5 gap-6 max-md:hidden ${!showColor &&'text-white' } `}>
+      <nav className={`flex flex-row md:max-lg:gap-5 gap-6 max-md:hidden   ${!showColor &&'text-white' } `}>
 
-        <a href='/' className='md:max-lg:text-md         font-medium  text-lg'>Home</a>
-        <a href='/aboutus' className='md:max-lg:text-md   font-medium text-lg'><div>About-Us</div></a>
-        <a href='/Service' className='md:max-lg:text-md   font-medium text-lg'><div>Service</div></a>
-        <a href='/portfolio' className='md:max-lg:text-md   font-medium text-lg'><div>Portfolio</div></a>
-        <a href='/blog' className=' md:max-lg:text-md       font-medium text-lg'><div>Blog</div></a>
+        <a href='/' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}>Home</a>
+        <a href='/aboutus' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>About-Us</div></a>
+        <a href='/Service' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Service</div></a>
+        <a href='/portfolio' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Portfolio</div></a>
+        <a href='/blog' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`}><div>Blog</div></a>
 
       </nav>
       <button type="button" className={`max-md:hidden md:max-lg:px-5 md:max-lg:py-2 rounded-full  ${!showColor ? 'bg-white':'bg-black'} ${!showColor ? 'text-[#8660df]':'text-white '}  py-2 px-7 font-bold text-xl`}>Contact</button>
