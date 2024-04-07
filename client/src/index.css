@@ -77,5 +77,16 @@ button:focus-visible {
   .button{
     @apply  border-[1px] px-7 py-1 border-purple-600 rounded-md 
   }
+  .lists{
+    @apply w-[280px] h-[60px] rounded-lg text-center text-xl	py-4 font-semibold
+  }
+}
+.lists{
+  transition: box-shadow 230ms ease-in-out ;
 }
 
+
+
+.lists:hover{
+   box-shadow:2px 2px 15px rgba(0, 0, 0, 0.6); ;
+}
