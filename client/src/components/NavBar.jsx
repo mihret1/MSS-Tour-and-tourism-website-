@@ -47,7 +47,7 @@ function NavBar() {
         <a href='/blog' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(5)} onMouseLeave={()=>setHoverAdd(0)}><div>Blog {(hoverAdd===5 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
 
       </nav>
-      <button type="button" className={`max-md:hidden md:max-lg:px-5 md:max-lg:py-2 rounded-full  ${!showColor ? 'bg-white':'bg-black'} ${!showColor ? 'text-[#8660df]':'text-white '}  py-2 px-7 font-bold text-xl`}>Contact</button>
+      <button type="button" className={`max-md:hidden md:max-lg:px-5 md:max-lg:py-2 rounded-full hover:bg-gray-600 hover:text-white  ${!showColor ? 'bg-white':'bg-black'} ${!showColor ? 'text-[#8660df]':'text-white '}  py-2 px-7 font-bold text-xl`}>Contact</button>
       
       <button className='hidden max-md:flex max-md:pr-3'>
       <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">

@@ -86,7 +86,7 @@ const Home=()=>{
                 tailored software development, and end-to-end technology infrastructure solutions.
                 Our mission is to provide creative and innovative technology solutions </h5>
               <div className=" flex flex-col gap-3 mx-[160px] max-sm:mx-1 mt-5 sm:max-lg:mx-10">
-                <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#9a87d2] to-[#eeecf4]  rounded-lg text-center text-xl	py-4 font-semibold ">Web Development</div>
+                <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#765ab7] to-white  rounded-lg text-center text-xl	py-4 font-semibold ">Web Development</div>
                 <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#7f62c2] to-white rounded-lg  text-center text-xl	py-4 font-semibold ">Mobile Development</div>
                 <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#765ab7] to-white rounded-lg text-center text-xl	py-4 font-semibold">Graphics Designing</div>
                 <div className="w-[280px] h-[60px] bg-gradient-to-r from-[#7e63bf] to-white rounded-lg text-center text-xl	py-4 font-semibold">Training</div>           
