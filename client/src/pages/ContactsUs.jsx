@@ -78,14 +78,14 @@ function ContactsUs() {
                    <span className="text-lg font-serif	">Email</span>
                    <input 
                    className="outline-none border-2 w-[350px] bg-[#D9D9D9] p-1" 
-                   value={email} type="email" onChange={(e)=>setFullname(e.target.value)} />
+                   value={email} type="email" onChange={(e)=>setEmail(e.target.value)} />
                 </div>
 
                 <div className="flex flex-col">
                    <span className="text-lg font-serif	">Phone Number</span>
                    <input 
                    className="outline-none border-2 w-[350px] bg-[#D9D9D9] p-1" 
-                   value={phone} type="text" onChange={(e)=>setFullname(e.target.value)} />
+                   value={phone} type="text" onChange={(e)=>setPhone(e.target.value)} />
                 </div>
 
                 <div className="flex flex-col">
