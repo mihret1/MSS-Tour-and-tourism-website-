@@ -26,6 +26,27 @@ function AboutUs() {
         </div>
       </div>
 
+      <div className="flex gap-10 justify-center pt-28 max-ml:flex-col items-center">
+        <div className="flex flex-col items-center gap-3 px-1 w-[40%] max-sm:w-[90%] sm:max-ml:w-[85%] ml:max-lg:w-[50%]">
+          <h1 className="text-2xl text-[#7F67BB]">Our Mission</h1>
+          <div className="h-[2px] w-[400px] bg-[#7F67BB] max-xss:w-[300px] xss:max-lg:w-[350px]"></div>
+          <p className="  text-xl max-sm:text-lg ">
+               Our mission is to provide creative and innovative technology solutions that effectively address the challenges 
+             of our community, while also ensuring that these solutions are scalable and globally applicable. 
+          </p>
+        </div> 
+        <div className="flex flex-col items-center gap-3 px-1 w-[40%] max-sm:w-[90%] sm:max-ml:w-[85%] ml:max-lg:w-[50%]">
+          <h1 className="text-2xl text-[#7F67BB]">Our Vision</h1>
+          <div className="h-[2px] w-[400px] bg-[#7F67BB] max-xss:w-[300px] xss:max-lg:w-[350px]"></div>
+          <p className="  text-xl max-sm:text-lg ">
+          Our vision is to be an exceptional and sustainable Ethiopian company that delivers 
+          innovative technology solutions that have a significant positive impact on people`s lives.
+          </p>
+        </div>
+      </div>
+
+      
+
 
     </div>
   )
