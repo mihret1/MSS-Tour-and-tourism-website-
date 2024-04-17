@@ -17,12 +17,12 @@ function ContactsUs() {
 
   return (
     <div>
-      <div className="bg-gradient-to-br from-[#755BB4] via-[#937DC7] via-49% to-[#846DBC] via-[#BEAFE3] via-77% h-[300px]">
-        <NavBar />
-        <h1 className="text-2xl text-center text-white pt-[130px]"> Contact Us</h1>       
-      </div>
+       <div className="bg-gradient-to-br from-[#755BB4] via-[#937DC7] via-49% to-[#846DBC] via-[#BEAFE3] via-77% h-[300px]">
+         <NavBar />
+         <h1 className="text-2xl text-center text-white pt-[130px]"> Contact Us</h1>       
+       </div>
       
-      <div className=" flex flex-col items-center gap-10 pt-7">
+       <div className=" flex flex-col items-center gap-10 pt-7">
           <h1 className="text-2xl text-center font-semibold">Let`s Start Conversation</h1>
          
           <div className="flex gap-20 max-sm:flex-col max-sm:gap-6 sm:max-md:gap-5">
@@ -118,7 +118,7 @@ function ContactsUs() {
              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
        
-      </div>
+       </div>
     </div>
   )
 }
