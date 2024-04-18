@@ -121,11 +121,11 @@ function AboutUs() {
 
       </div>
 
-     <div className="flex pt-24 justify-center">
-         <img src={ab} className="w-[44%]"/>
-         <div className="flex flex-col w-[40%] pt-8 gap-1 ">
+     <div className="flex pt-24 justify-center max-sm:flex-col max-sm:items-center ">
+         <img src={ab} className="w-[44%] max-sm:w-[80%]"/>
+         <div className="flex flex-col w-[40%] max-sm:w-[80%] pt-8 gap-1 max-sm:items-center">
           <h1 className="text-2xl font-semibold"> What Sets Us Apart</h1>
-          <p className="text-xl">
+          <p className="text-xl max-sm:text-center" >
             Our commitment to innovation, client satisfaction,
             and a collaborative
             approach sets us apart. We take pride
