@@ -3,6 +3,9 @@ import about from '../assets/about/abt.webp'
 import checkbox from '../assets/about/checkbox.png'
 import o from '../assets/about/o.jpg'
 import ab from '../assets/about/ab.jpg'
+import CircleIcon from '@mui/icons-material/Circle';
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+
 
 function AboutUs() {
   return (
@@ -51,8 +54,8 @@ function AboutUs() {
       <div className="flex flex-col items-center py-14 gap-3 m-14 bg-gradient-to-br from-[#7f64bd] to-[#D9D9D9]">
         <h1 className=" text-2xl font-semibold">What We Do</h1>
         <p className=" text-center text-lg w-[70%] font-semibold max-md:w-[90%] max-sm:text-base" >
-        Softnet is a technology firm specializing in comprehensive technology training, 
-        tailored software development, and end-to-end technology infrastructure solutions.
+             Softnet is a technology firm specializing in comprehensive technology training, 
+             tailored software development, and end-to-end technology infrastructure solutions.
         </p>
        
         <div className="flex justify-start gap-20 pt-4 max-md:flex-col  max-sm:gap-10">
@@ -135,19 +138,38 @@ function AboutUs() {
          </div>
      </div>
 
-     <div className=" flex flex-row">
-      <div className="flex flex-col">
-        <h1>Testimonials</h1>
-        <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident.
-        </p>
-      </div>
-      <div className="flex flex-col">
+     <div className=" flex flex-row gap-10 justify-center items-center bg-[#F0ECF9] m-10 max-md:flex-col max-sm:mx-2 sm:max-ml:mx-5  py-10">
+        <div className="flex flex-col w-[40%]  max-md:w-[80%]  ">
+          <h1 className="text-2xl font-semibold">Testimonials</h1>
+          <p className="text-lg md:pr-10">
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident.
+          </p>
+        </div>
+        <div className="flex flex-col w-[40%] max-xss:w-[92%]  max-md:w-[80%] md:max-lg:w-[50%] bg-white rounded-2xl py-4 px-5">
+          <div className=" flex font-serif items-center gap-2">
+            <img src={o} className="w-24 h-24 max-sm:w-20 max-sm:h-20 rounded-full"/>
+            <div className="flex flex-col">
+              <h2 className="text-xl">Mihiret Desalegn</h2>
+              <span className="text-lg">store owner</span>
+            </div>
+          </div>
+          <div>
+            <p className="px-7 max-sm:px-3"><FormatQuoteIcon sx={{ fontSize:'36px', color:'#7F007F',  }} /> Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.<FormatQuoteIcon sx={{ fontSize:'36px', color:'#7F007F', marginLeft:3 }}/>
+            </p>
+          </div>
+          <div  className="flex justify-center  ">
+           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
 
-      </div>
+          </div>
+        </div>
 
      </div>
 
