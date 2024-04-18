@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar"
 import about from '../assets/about/abt.webp'
 import checkbox from '../assets/about/checkbox.png'
 import o from '../assets/about/o.jpg'
+import ab from '../assets/about/ab.jpg'
 
 function AboutUs() {
   return (
@@ -120,6 +121,19 @@ function AboutUs() {
 
       </div>
 
+     <div className="flex pt-24 justify-center">
+         <img src={ab} className="w-[44%]"/>
+         <div className="flex flex-col w-[40%] pt-8 gap-1 ">
+          <h1 className="text-2xl font-semibold"> What Sets Us Apart</h1>
+          <p className="text-xl">
+            Our commitment to innovation, client satisfaction,
+            and a collaborative
+            approach sets us apart. We take pride
+            in developing tailor-made solutions that not
+            only meet but exceed our clients`` expectations
+          </p>
+         </div>
+     </div>
 
     </div>
   )
