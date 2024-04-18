@@ -77,9 +77,16 @@ button:focus-visible {
   .button{
     @apply  border-[1px] px-7 py-1 border-purple-600 rounded-md 
   }
+  .abt{
+    @apply flex gap-3 items-center  text-xl 
+  }
   .lists{
     @apply w-[280px] h-[60px] rounded-lg text-center text-xl	py-4 font-semibold
   }
+}
+
+.abt{
+  font-weight: 200px;
 }
 .lists{
   transition: box-shadow 230ms ease-in-out ;
