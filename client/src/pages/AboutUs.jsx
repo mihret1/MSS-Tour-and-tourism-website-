@@ -78,17 +78,17 @@ function AboutUs() {
       </div>
 
 
-      <div className="flex justify-center  items-center gap-10 max-md:flex-col">
+      <div className="flex justify-center  items-center gap-1 max-md:flex-col max-md:gap-4">
 
         <div className="flex flex-col w-[50%] max-md:w-[85%]">
           <h1 className="text-2xl font-semibold">Our Core Values</h1>
-          <p className="text-xl">At TechSolutions, our core values guide everything we do:</p>
+          <p className="text-xl ">At TechSolutions, our core values guide everything we do:</p>
          
           <div className="flex gap-3 pt-4 "> 
              <img src={checkbox} className="w-10 h-10"/>
              <div className="font-serif	">
                 <h1 className="text-xl font-semibold">Software Development</h1> 
-                <p className="text-lg"> We embrace creativity and continuously seek new and better ways to solve problems </p>
+                <p className="text-lg ml:w-[80%] "> We embrace creativity and continuously seek new and better ways to solve problems </p>
              </div>
           </div>
 
@@ -96,27 +96,27 @@ function AboutUs() {
              <img src={checkbox} className="w-10 h-9"/>
              <div className="font-serif	">
                 <h1 className="text-xl font-semibold">Software Development</h1> 
-                <p className="text-lg"> We embrace creativity and continuously seek new and better ways to solve problems </p>
+                <p className="text-lg  ml:w-[80%]"> We embrace creativity and continuously seek new and better ways to solve problems </p>
              </div>
           </div>
           <div className="flex gap-3 pt-4 "> 
              <img src={checkbox} className="w-10 h-10"/>
              <div className="font-serif	">
                 <h1 className="text-xl font-semibold">Software Development</h1> 
-                <p className="text-lg"> We embrace creativity and continuously seek new and better ways to solve problems </p>
+                <p className="text-lg ml:w-[80%]"> We embrace creativity and continuously seek new and better ways to solve problems </p>
              </div>
           </div>
           <div className="flex gap-3 pt-4 "> 
              <img src={checkbox} className="w-10 h-10"/>
              <div className="font-serif	">
                 <h1 className="text-xl font-semibold">Software Development</h1> 
-                <p className="text-lg"> We embrace creativity and continuously seek new and better ways to solve problems </p>
+                <p className="text-lg  ml:w-[80%]"> We embrace creativity and continuously seek new and better ways to solve problems </p>
              </div>
           </div>
 
 
          </div>
-         <img src={o} className="w-[35%] max-md:w-[85%]"/>
+         <img src={o} className="w-[35%] max-xss:w-[85%] xss:max-sm:w-[70%] sm:max-md:w-[60%] "/>
 
       </div>
 
