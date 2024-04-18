@@ -49,26 +49,26 @@ function AboutUs() {
 
       <div className="flex flex-col items-center py-14 gap-3 m-14 bg-gradient-to-br from-[#7f64bd] to-[#D9D9D9]">
         <h1 className=" text-2xl font-semibold">What We Do</h1>
-        <p className=" text-center text-lg w-[70%] font-semibold" >
+        <p className=" text-center text-lg w-[70%] font-semibold max-md:w-[90%] max-sm:text-base" >
         Softnet is a technology firm specializing in comprehensive technology training, 
         tailored software development, and end-to-end technology infrastructure solutions.
         </p>
        
-        <div className="flex justify-start gap-20 pt-4  ">
+        <div className="flex justify-start gap-20 pt-4 max-md:flex-col  max-sm:gap-10">
 
           <div className="flex flex-col gap-3">
-            <div className="abt"> <img src={checkbox} className="w-8"/> Software Development</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Information Technology outsourcing (ITO)</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Technology Trainings</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Infrastructure supply and Deployment</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Software Development</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Information Technology outsourcing (ITO)</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Technology Trainings</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Infrastructure supply and Deployment</div>
 
           </div>
           
           <div className="flex flex-col gap-3">
-            <div className="abt"> <img src={checkbox} className="w-8"/> Software Development</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Information Technology outsourcing (ITO)</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Technology Trainings</div>
-            <div className="abt"> <img src={checkbox} className="w-8"/> Infrastructure supply and Deployment</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Software Development</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Information Technology outsourcing (ITO)</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Technology Trainings</div>
+            <div className="abt"> <img src={checkbox} className="Aimg"/> Infrastructure supply and Deployment</div>
 
           </div>
         
