@@ -173,6 +173,20 @@ function AboutUs() {
 
      </div>
 
+     <div className=" flex flex-col gap-2 items-center">
+        <h1 className=" text-2xl font-semibold">Our Technology Stack</h1>
+        <div className="text-xl font-semibold flex gap-4">
+
+          <span className="text-[#8A11E9]"> Python,</span>
+          <span className="text-[#2FC0C6]"> React.js, </span>
+          <span className="text-[#943737]"> Docker ,</span>
+          <span className="text-[#1BE023]"> AWS,</span>
+          <span className="text-[#EDDC47]">nodejs ,</span>
+          <span className="text-[#8A11E9]"> mongodb</span>
+          
+          </div>
+     </div>
+
 
 
 
