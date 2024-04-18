@@ -162,11 +162,11 @@ function AboutUs() {
             </p>
           </div>
           <div  className="flex justify-center  ">
-           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
-           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
-           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
-           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
-           <button> <CircleIcon sx={{ fontSize: 20 }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 ,color:'#C8BEE0'}}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 ,color:'#C8BEE0'}}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20,color:'#C8BEE0' }}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20 ,color:'#7F007F'}}/></button>
+           <button> <CircleIcon sx={{ fontSize: 20,color:'#C8BEE0' }}/></button>
 
           </div>
         </div>
