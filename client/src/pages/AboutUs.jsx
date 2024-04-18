@@ -175,7 +175,7 @@ function AboutUs() {
 
      <div className=" flex flex-col gap-2 items-center">
         <h1 className=" text-2xl font-semibold">Our Technology Stack</h1>
-        <div className="text-xl font-semibold flex gap-4">
+        <div className="text-xl font-semibold grid grid-cols-6 gap-4 max-sm:grid-cols-3 sm:max-md:gap-2">
 
           <span className="text-[#8A11E9]"> Python,</span>
           <span className="text-[#2FC0C6]"> React.js, </span>
