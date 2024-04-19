@@ -6,6 +6,20 @@ import ab from '../assets/about/ab.jpg'
 import CircleIcon from '@mui/icons-material/Circle';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import PinDropIcon from '@mui/icons-material/PinDrop';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
+import yabi from '../assets/about/yabi.jpg'
+import genzi from '../assets/about/genzi.jpg'
+import ef from '../assets/about/ef.jpg'
+import m from '../assets/about/m.jpg'
 
 function AboutUs() {
   return (
@@ -150,7 +164,7 @@ function AboutUs() {
         </div>
         <div className="flex flex-col w-[40%] max-xss:w-[92%]  max-md:w-[80%] md:max-lg:w-[50%] bg-white rounded-2xl py-4 px-5">
           <div className=" flex font-serif items-center gap-2">
-            <img src={o} className="w-24 h-24 max-sm:w-20 max-sm:h-20 rounded-full"/>
+            <img src={m} className="w-24 h-24 max-sm:w-20 max-sm:h-20 rounded-full"/>
             <div className="flex flex-col">
               <h2 className="text-xl">Mihiret Desalegn</h2>
               <span className="text-lg">store owner</span>
@@ -173,7 +187,7 @@ function AboutUs() {
 
      </div>
 
-     <div className=" flex flex-col gap-2 items-center">
+     <div className=" flex flex-col gap-2 items-center pb-20">
         <h1 className=" text-2xl font-semibold">Our Technology Stack</h1>
         <div className="text-xl font-semibold grid grid-cols-6 gap-4 max-sm:grid-cols-3 sm:max-md:gap-2">
 
@@ -185,6 +199,88 @@ function AboutUs() {
           <span className="text-[#8A11E9]"> mongodb</span>
           
           </div>
+     </div>
+
+     <div className="grid grid-cols-2 mx-20 gap-x-10 gap-y-10">
+        
+        <div className="flex gap-2 ">
+           <img src={ef} className="rounded-full h-24 w-32"/> 
+           <div className="flex flex-col">
+            <span className="text-2xl font-semibold">Genzeb Alemu</span>
+            <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
+            <span className=" font-thin">John is a seasoned entrepreneur 
+              with a background in software engineering. His vision for TechSolutions is</span>
+              <div className='flex gap-2'>
+              <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
+              <p>  <a href='/home'><LinkedInIcon/></a></p>
+              <p>  <a href='/home'><InstagramIcon /></a></p>
+              <p>  <a href='/home'><TwitterIcon /></a></p>
+              <p>  <a href='/home'><PinterestIcon/></a></p>
+            </div>
+           </div> 
+        </div>
+
+        <div className="flex gap-2">
+           <img src={yabi} className="rounded-full h-24 w-32"/> 
+           <div className="flex flex-col">
+            <span className="text-2xl font-semibold">Genzeb Alemu</span>
+            <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
+            <span className=" font-thin">John is a seasoned entrepreneur 
+              with a background in software engineering. His vision for TechSolutions is</span>
+              <div className='flex gap-2'>
+              <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
+              <p>  <a href='/home'><LinkedInIcon/></a></p>
+              <p>  <a href='/home'><InstagramIcon /></a></p>
+              <p>  <a href='/home'><TwitterIcon /></a></p>
+              <p>  <a href='/home'><PinterestIcon/></a></p>
+
+           </div>
+
+           </div> 
+
+        </div>
+
+        <div className="flex gap-2 ">
+           <img src={genzi} className="rounded-full h-24 w-32"/> 
+           <div className="flex flex-col">
+            <span className="text-2xl font-semibold">Genzeb Alemu</span>
+            <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
+            <span className=" font-thin">John is a seasoned entrepreneur 
+              with a background in software engineering. His vision for TechSolutions is</span>
+              <div className='flex gap-2'>
+              <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
+              <p>  <a href='/home'><LinkedInIcon/></a></p>
+              <p>  <a href='/home'><InstagramIcon /></a></p>
+              <p>  <a href='/home'><TwitterIcon /></a></p>
+              <p>  <a href='/home'><PinterestIcon/></a></p>
+
+           </div>
+
+           </div> 
+
+        </div>
+
+
+        <div className="flex gap-2">
+           <img src={m} className="rounded-full h-24 w-32"/> 
+           <div className="flex flex-col">
+            <span className="text-2xl font-semibold">Genzeb Alemu</span>
+            <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
+            <span className=" font-thin">John is a seasoned entrepreneur 
+              with a background in software engineering. His vision for TechSolutions is</span>
+              <div className='flex gap-2'>
+              <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
+              <p>  <a href='/home'><LinkedInIcon/></a></p>
+              <p>  <a href='/home'><InstagramIcon /></a></p>
+              <p>  <a href='/home'><TwitterIcon /></a></p>
+              <p>  <a href='/home'><PinterestIcon/></a></p>
+
+           </div>
+
+           </div> 
+
+        </div>
+     
      </div>
 
 
