@@ -201,14 +201,14 @@ function AboutUs() {
           </div>
      </div>
 
-     <div className="grid grid-cols-2 mx-20 gap-x-10 gap-y-10">
+     <div className="grid grid-cols-2 mx-20 gap-x-10 gap-y-10 max-md:mx-2 max-md:grid-cols-1 justify-center items-center">
         
         <div className="flex gap-2 ">
            <img src={ef} className="rounded-full h-24 w-32"/> 
            <div className="flex flex-col">
             <span className="text-2xl font-semibold">Genzeb Alemu</span>
             <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
-            <span className=" font-thin">John is a seasoned entrepreneur 
+            <span className=" font-thin lg:w-[70%]">John is a seasoned entrepreneur 
               with a background in software engineering. His vision for TechSolutions is</span>
               <div className='flex gap-2'>
               <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
@@ -225,7 +225,7 @@ function AboutUs() {
            <div className="flex flex-col">
             <span className="text-2xl font-semibold">Genzeb Alemu</span>
             <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
-            <span className=" font-thin">John is a seasoned entrepreneur 
+            <span className=" font-thin lg:w-[70%]">John is a seasoned entrepreneur 
               with a background in software engineering. His vision for TechSolutions is</span>
               <div className='flex gap-2'>
               <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
@@ -245,7 +245,7 @@ function AboutUs() {
            <div className="flex flex-col">
             <span className="text-2xl font-semibold">Genzeb Alemu</span>
             <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
-            <span className=" font-thin">John is a seasoned entrepreneur 
+            <span className=" font-thin lg:w-[70%]">John is a seasoned entrepreneur 
               with a background in software engineering. His vision for TechSolutions is</span>
               <div className='flex gap-2'>
               <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
@@ -266,7 +266,7 @@ function AboutUs() {
            <div className="flex flex-col">
             <span className="text-2xl font-semibold">Genzeb Alemu</span>
             <span className="text-baseline font-bold text-[#4814C7] font-serif">Co-Founder & CEO</span>
-            <span className=" font-thin">John is a seasoned entrepreneur 
+            <span className=" font-thin lg:w-[70%]">John is a seasoned entrepreneur 
               with a background in software engineering. His vision for TechSolutions is</span>
               <div className='flex gap-2'>
               <p>  <a href='/home'><FacebookOutlinedIcon /></a></p>
