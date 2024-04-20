@@ -167,7 +167,7 @@ function AboutUs() {
             <img src={m} className="w-24 h-24 max-sm:w-20 max-sm:h-20 rounded-full"/>
             <div className="flex flex-col">
               <h2 className="text-xl">Mihiret Desalegn</h2>
-              <span className="text-lg">store owner</span>
+              <span className="text-lg">Store owner</span>
             </div>
           </div>
           <div>
@@ -187,7 +187,7 @@ function AboutUs() {
 
      </div>
 
-     <div className=" flex flex-col gap-2 items-center pb-20">
+     <div className=" flex flex-col gap-2 items-center pb-28">
         <h1 className=" text-2xl font-semibold">Our Technology Stack</h1>
         <div className="text-xl font-semibold grid grid-cols-6 gap-4 max-sm:grid-cols-3 sm:max-md:gap-2">
 
@@ -201,7 +201,7 @@ function AboutUs() {
           </div>
      </div>
 
-     <div className="grid grid-cols-2 mx-20 gap-x-10 gap-y-10 max-md:mx-2 max-md:grid-cols-1 justify-center items-center">
+     <div className="grid grid-cols-2 mx-20  gap-x-10 gap-y-10 max-md:mx-2 max-md:grid-cols-1 justify-center  ">
         
         <div className="flex gap-2 ">
            <img src={ef} className="rounded-full h-24 w-32"/> 
@@ -259,7 +259,6 @@ function AboutUs() {
            </div> 
 
         </div>
-
 
         <div className="flex gap-2">
            <img src={m} className="rounded-full h-24 w-32"/> 
