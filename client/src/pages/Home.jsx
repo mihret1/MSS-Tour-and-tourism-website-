@@ -42,7 +42,8 @@ import pp from '../assets/pp.jpg'
 
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import EventNoteIcon from '@mui/icons-material/EventNote';
-import GroupsIcon from '@mui/icons-material/Groups';import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
+import GroupsIcon from '@mui/icons-material/Groups';
+import HorizontalRuleSharp from "@mui/icons-material/HorizontalRuleSharp";
 import { useState } from "react";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import CircleIcon from '@mui/icons-material/Circle';

@@ -6,9 +6,7 @@ import ab from '../assets/about/ab.jpg'
 import CircleIcon from '@mui/icons-material/Circle';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import PinDropIcon from '@mui/icons-material/PinDrop';
+
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
