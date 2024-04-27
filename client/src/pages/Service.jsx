@@ -79,6 +79,30 @@ function Service() {
                 <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
               </div>
             </div>
+            <div className="flex flex-row gap-2">
+              <img src={t1} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Technolgy Training</h1>
+                <p>From coding to web development,
+                   we offer specialized programs for all age groups,
+                    starting as young as 10 years old
+                </p>
+                <a href='/service' className="text-purple-700  font-semibold">Learn More</a>
+              </div>
+            </div>
+
+            <div className="flex flex-row gap-2">
+              <img src={dev2} className="w-[110px] h-24"/>
+              <div>
+                <h1 className="text-xl font-semibold">Software Development</h1>
+                <p>We craft scalable, secure, and user-friendly
+                   software applications to enhance productivity and streamline your business processes
+                </p>
+                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+              </div>
+            </div>  
+
+
           </div>
         </div>
 
