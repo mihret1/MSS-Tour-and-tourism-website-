@@ -1,5 +1,15 @@
 import NavBar from "../components/NavBar"
 import p1 from '../assets/portfolio/p1.jpg'
+import p2 from '../assets/portfolio/p2.jpg'
+import p3 from '../assets/portfolio/p3.jpg'
+import p4 from '../assets/portfolio/p4.jpg'
+import p5 from '../assets/portfolio/p5.jpg'
+import p6 from '../assets/portfolio/p6.jpg'
+import p7 from '../assets/portfolio/p7.jpg'
+
+
+
+
 
 function Portfolio() {
   return (
@@ -9,6 +19,7 @@ function Portfolio() {
         <NavBar />
         <h1 className="text-2xl text-center text-white pt-[130px] font-semibold"> Portfolio </h1>       
       </div>
+
       <div className="flex px-14 max-ml:px-5 gap-6 pt-16 max-md:flex-col">
         
         <img src={p1} className=" w-[40%] max-md:w-[90%]"/>
@@ -26,6 +37,83 @@ function Portfolio() {
       
       </div>
 
+     <div className="bg-[#E8E6EC] xl:m-16 max-xl:m-1  mt-32 pb-5 " >
+       <h1 className="text-2xl font-semibold text-center pt-14  pb-7">Here are our Amazing Work</h1>
+       <div className="grid grid-cols-3 max-sm:grid-cols-1  sm:max-lg:grid-cols-2 max-lg:px-1  justify-center items-center gap-y-10 lg:max-xl:px-5 px-[8%]   justify-items-center	">
+         <div className="w-[310px] flex flex-col items-center text-center bg-white ">
+              <img src={p3} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold ">
+                Detail
+              </button>
+         </div>
+         <div className="w-[310px] flex flex-col items-center text-center bg-white">
+              <img src={p4} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold ">
+                Detail
+              </button>
+         </div>
+         <div className="w-[310px] flex flex-col items-center text-center bg-white">
+              <img src={p5} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold ">
+                Detail
+              </button>
+         </div>
+         <div className="w-[310px] flex flex-col items-center text-center bg-white">
+              <img src={p6} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold bg-white">
+                Detail
+              </button>
+         </div>
+         <div className="w-[310px] flex flex-col items-center text-center bg-white">
+              <img src={p2} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold ">
+                Detail
+              </button>
+         </div>
+         <div className="w-[310px] flex flex-col items-center text-center bg-white">
+              <img src={p7} className="w-[310px] h-[220px]"/>
+              <h1 className=" text-xl font-semibold">Hulenta App</h1>
+              <h2 className="text-[#755BB4] text-lg font-semibold">Web Development</h2>
+              <p1 >It’s a comprehensive delivery app designed
+                 for a wide range of items including goods, electronics, furniture, and more.
+              </p1>
+              <button className=" text-[#755BB4] text-lg font-semibold ">
+                Detail
+              </button>
+         </div>
+       </div>
+       <div className="flex gap-2 justify-center pt-5">
+          <button className="rounded-full border-2 border-black w-7">1</button>
+          <button className="rounded-full border-2 border-black w-7 font-bold bg-[#755BB4]">2</button>
+          <button className="rounded-full border-2 border-black w-7">3</button>
+       </div>
+        
+     </div>
 
 
     </div>
