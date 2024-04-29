@@ -195,7 +195,7 @@ const Home=()=>{
                    we offer specialized programs for all age groups,
                     starting as young as 10 years old
                 </p>
-                <a href='/service' className="text-purple-700  font-semibold">Learn More</a>
+                <a href='/servicedetail' className="text-purple-700  font-semibold">Learn More</a>
               </div>
             </div>
 
@@ -206,7 +206,7 @@ const Home=()=>{
                 <p>We craft scalable, secure, and user-friendly
                    software applications to enhance productivity and streamline your business processes
                 </p>
-                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+                <a href='/servicedetail' className="text-purple-700 font-semibold">Learn More</a>
               </div>
             </div>         
 
@@ -218,7 +218,7 @@ const Home=()=>{
                    guaranteeing seamless integration and optimal 
                    performance of your technology infrastructure.
                 </p>
-                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+                <a href='/servicedetail' className="text-purple-700 font-semibold">Learn More</a>
               </div>
             </div>
 
@@ -229,7 +229,7 @@ const Home=()=>{
                 <p>Softnet, your ultimate partner for 
                   outsourced services that redefine excellence. Dive into a realm where professionalism
                 </p>
-                <a href='/service' className="text-purple-700 font-semibold">Learn More</a>
+                <a href='/servicedetail' className="text-purple-700 font-semibold">Learn More</a>
               </div>
             </div>
           </div>
