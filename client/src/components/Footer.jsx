@@ -31,7 +31,7 @@ function Footer() {
           <p><LocalPhoneIcon sx={{ color:'#755BB4' }} />+251(0)15 57-86-57</p>
           <p><PinDropIcon sx={{ color:'#755BB4' }} /> Mexico , Shewa Bakery Bldg.
             4th Floor ,Infront of K Kare,
-            CenterAddis Ababa , Ethiopia</p>
+            CenterzzAddis Ababa , Ethiopia</p>
         </div>        
        
         <div className=' flex  flex-col gap-6 text-lg justify-self-center'>

@@ -133,6 +133,7 @@ const Home=()=>{
            <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
            <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
                     This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+          
           <div className="w-[90%]  max-md:hidden">
              <Slider {...settings} className="">
                <div><img  className="w-32 h-28" src={c1}/></div> 
@@ -225,7 +226,7 @@ const Home=()=>{
             <div className="flex flex-row gap-2">
               <img src={con1} className="w-[110px] h-24"/>
               <div>
-                <h1 className="text-xl font-semibold">TInformation Technology outsourcing (ITO)</h1>
+                <h1 className="text-xl font-semibold">Information Technology outsourcing (ITO)</h1>
                 <p>Softnet, your ultimate partner for 
                   outsourced services that redefine excellence. Dive into a realm where professionalism
                 </p>
@@ -267,8 +268,8 @@ const Home=()=>{
           <div className="flex flex-row gap-4 text-lg font-semibold max-md:grid max-md:grid-cols-3 md:max-lg:gap-2 p-2 ">
              <button 
              style={{ ...(p===1 && {backgroundColor:'#755BB4'}) }}
-            className="button" 
-            onClick={()=>setP(1)}>All</button>
+             className="button" 
+             onClick={()=>setP(1)}>All</button>
              <button 
               style={{ ...(p===2 && {backgroundColor:'#755BB4'}) }}
 
@@ -289,7 +290,7 @@ const Home=()=>{
          <div className="w-[70%]">
           
           { ( p===1 || p===3) && <div className=" grid grid-cols-3 max-sm:grid-cols-1  sm:max-ml:grid-cols-2  gap-x-3 gap-y-3 items-center justify-center">
-            <img src={i5} className="h-52 w-[400px]"/>
+            <a href="/portfoliodetail" className="try"><img src={i5} className="h-52 w-[400px]"/></a>
             <img src={i3} className="h-52 w-[350px]"/>
             <img src={i2} className="h-52 w-[400px]"/>
             <img src={i4} className="h-52 w-[350px]"/>
@@ -353,7 +354,7 @@ const Home=()=>{
         <h1 className="font-bold text-2xl">Latest Update</h1>
         <img src={news}/>
         <div className="flex flex-row max-sm:flex-col sm:max-ml:grid sm:max-ml:grid-cols-2 w-[80%]  gap-10">
-           <div className="hover:shadow-2xl">
+           <div className=" try">
             <a href="/">
             <img src={i5} className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
@@ -365,7 +366,7 @@ const Home=()=>{
             </a>
            </div>
 
-           <div  className="hover:shadow-2xl" >
+           <div  className="try" >
            <a href="/">
             <img src={i2}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
@@ -377,7 +378,7 @@ const Home=()=>{
              </a>
            </div>
 
-           <div className="hover:shadow-xl">
+           <div className="try">
            <a href="/">
             <img src={i5}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
@@ -407,8 +408,20 @@ const Home=()=>{
           <div className="flex gap-4">
             <img src={pp}  className=" rounded-full w-16 h-16"/>
             <div className="font-semibold">
-              <h1 className="text-xl">Mihiret Desalegn</h1>
-              <h1>Store Owner</h1>
+              <h1 className="text-xl">
+                 { (t===1) && 'Mihiret Desalegn'}
+                 { (t===2) && 'Yeabsira Tekuamwork'}
+                 { (t===3) && 'Medhanit Asmare'}
+                 { (t===4) && 'Genzeb Alemu'}
+
+              </h1>
+              <h1>
+                { (t===1) && 'Business Manager'}
+                { (t===2) && 'Store Owner'}
+                { (t===3) && 'Software developer'}
+                { (t===4) && 'Ceo at alpha'}
+
+              </h1>
             </div>
           </div>
           <div>

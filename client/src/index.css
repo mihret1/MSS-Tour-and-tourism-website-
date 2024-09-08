@@ -95,10 +95,14 @@ button:focus-visible {
   transition: box-shadow 230ms ease-in-out ;
 }
 
-
-
 .lists:hover{
-   box-shadow:2px 2px 15px rgba(0, 0, 0, 0.6); ;
+   box-shadow:2px 2px 15px rgba(0, 0, 0, 0.6); 
 }
 
+.try:hover{
+  box-shadow:1px 1px 15px rgba(0, 0, 0, 0.6); 
 
+}
+.try{
+  transition: box-shadow 130ms ease-in-out ;
+}

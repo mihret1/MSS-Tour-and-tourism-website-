@@ -48,7 +48,7 @@ function Portfolio() {
                  for a wide range of items including goods, electronics, furniture, and more.
               </p1>
               <button className=" text-[#755BB4] text-lg font-semibold ">
-                Detail
+                 <a href="/portfoliodetail">Detail</a>
               </button>
          </div>
          <div className="w-[310px] flex flex-col items-center text-center bg-white">
