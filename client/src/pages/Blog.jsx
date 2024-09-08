@@ -20,7 +20,7 @@ function Blog() {
        <time className='text-lg font-serif '><CalendarMonthIcon sx={{ color:'#755BB4' }} /> {props.date}</time>
        <h1 className='text-2xl font-semibold '>{props.title}</h1>
        <p className='font-sans  '>{props.description}</p>
-       <span className="font-bold text-lg text-[#755BB4] "><a href='/'> Read more </a></span>
+       <span className="font-bold text-lg text-[#755BB4] "><a href='/blogdetail'> Read more </a></span>
        </div>
     </div>
     )
