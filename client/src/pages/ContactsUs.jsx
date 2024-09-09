@@ -99,7 +99,7 @@ function ContactsUs() {
                    className="outline-none border-2 w-[350px] bg-[#D9D9D9] p-1 h-24" 
                    value={comment} type="text" onChange={(e)=>setComment(e.target.value)} />
                 </div>
-                <button className="px-5 py-2  rounded-lg bg-gradient-to-r from-[#6C4277] to-[#ad99d9] text-white text-xl">Submit</button>
+                <button className="px-5 py-2  rounded-lg bg-gradient-to-r from-[#6C4277] to-[#ad99d9] hover:bg-gradient-to-r hover:from-[#ad99d9] hover:to-[#6C4277]  text-white text-xl">Submit</button>
                 
 
 

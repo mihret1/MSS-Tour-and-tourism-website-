@@ -43,7 +43,7 @@ const ServiceDetail=()=>{
 
                 </div>
 
-                <button className='text-[#755BB4] text-xl font-semibold py-2 w-[100px] mt-2 '>Register...</button>
+                <button className='text-[#755BB4] text-xl font-semibold py-2 w-[100px] mt-2 '><a href='/register'>Register...</a></button>
              </div>
 
            </div>
