@@ -29,7 +29,7 @@ function Registration() {
               <div className="w-1/2 flex flex-col items-center ml:pl-[5%] max-ml:items-center max-md:w-[80%] ">
                 <div className="flex flex-col w-[450px] max-lg:w-[80%]   gap-3 pb-5 ">
                    <span className="text-lg font-serif">FullName</span>
-                   <input className="outline-[#d0cadc] bg-slate-100 h-10"
+                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 </div>
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-5 ">
@@ -39,17 +39,17 @@ function Registration() {
                 </div>
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-5 ">
                    <span className="text-lg font-serif">Email</span>
-                   <input className="outline-[#d0cadc] bg-slate-100 h-10"
+                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 </div>
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">Course</span>
-                   <input className="outline-[#d0cadc] bg-slate-100 h-10"
+                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 </div>
                   <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">Age</span>
-                   <input className="outline-[#d0cadc] bg-slate-100 h-10"
+                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 
                 </div>

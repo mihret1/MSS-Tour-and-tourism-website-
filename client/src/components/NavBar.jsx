@@ -1,16 +1,17 @@
 
 import nav from '../assets/softnet.jpg'
 import { useState,useEffect } from "react"
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function NavBar() {
   const [showColor,setShowColor]=useState(false)
   // const [isFixed,setIsFixed]=useState(false)
   const [hoverAdd, setHoverAdd]=useState(0)
+  const [navb,setNavb]=useState(true)
 
   useEffect(()=>{
      const handleScroll=()=>{
-      if(window.scrollY >=100){
+      if(window.scrollY >=50){
         setShowColor(true)
       }else{
         setShowColor(false)
@@ -23,15 +24,15 @@ function NavBar() {
   },[])
   
   return (
-<>
+<div className={`${showColor && "fixed"} w-[100%]` }>
 
-    <div  className={` ${showColor? "bg-white":"bg-transparent"}  ${showColor && "fixed"} ${showColor && "shadow-lg"}  w-[100%]  flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4`}>
+    <div  className={` max-md:bg-white  ${showColor? "bg-white":"bg-transparent"}   ${showColor && "shadow-lg"}  w-[100%]  flex flex-row h-[90px]  items-center  justify-between px-10 max-lg:px-4`}>
       <a href='/'>
       <div className='flex'>
         <img className='w-[65px] h-[65px] max-lg:w-[50px] max-lg:h-[50px]'  src={nav}/>
         <div className='flex flex-col justify-end ml-1 lg:items-center'>
-          <h1 className={`${!showColor && 'text-white'} max-lg:text-2xl  text-4xl font-serif font-semibold` } > Softnet</h1>
-           <p className={`${ !showColor && 'text-[#dcd3ec]'} text-sm `}>software development plc</p>
+          <h1 className={`max-md:text-black ${!showColor && 'text-white'} max-lg:text-2xl  text-4xl font-serif font-semibold` } > Softnet</h1>
+           <p className={`max-md:text-black ${ !showColor && 'text-[#dcd3ec]'} text-sm `}>software development plc</p>
         </div>
        
       </div>
@@ -47,16 +48,29 @@ function NavBar() {
       </nav>
       <button type="button" className={`max-md:hidden md:max-lg:px-5 md:max-lg:py-2 rounded-full hover:bg-gray-600 hover:text-white  ${!showColor ? 'bg-white':'bg-black'} ${!showColor ? 'text-[#8660df]':'text-white '}  py-2 px-7 font-bold text-xl`}><a href='/contact'>Contact</a></button>
       
-      <button className='hidden max-md:flex max-md:pr-3'>
+      <button onClick={()=>setNavb((e)=>!e)}   className='hidden max-md:flex max-md:pr-3'>
       <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
       </svg>
       </button>
 
+    
    </div>
+   {navb && <div className= {`fixed bg-white h-52 w-[100%] hidden max-md:flex  `}>
+        <div className='w-[100%] h-96'>
+        <a href='/contact'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon  sx={{ color:'purple' }}/> Home</div></a> 
+        <a href='/aboutus'><div className='border-b-2 border-dashed hover:text-purple-600  p-1'> <ArrowRightAltIcon />About Us</div></a> 
+          <a href='/service'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon /> Service</div></a> 
+          <a href='/portfolio'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'> <ArrowRightAltIcon />Portfolio</div></a> 
+          <a href='/blog'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon /> Blog</div></a> 
+          <a href='/contact'><div className=' hover:text-purple-600 p-1'><ArrowRightAltIcon /> Contact</div></a> 
+
+        </div>
+
+   </div>}
     
 
-    </>
+    </div>
   )
 }
 

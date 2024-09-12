@@ -79,7 +79,7 @@ const Home=()=>{
         <div className="h-[665px] shadow-lg	 bg-gradient-to-br from-[#7457b8]  via-[#d2cbef] via-70%  to-[#7E66B9] "   >
           <NavBar />
 
-          <div className="flex flex-row gap-2 mx-16 pt-16">
+          <div className=" flex flex-row gap-2 mx-16 pt-16">
             
             <div className="">
               <h2 className="font-bold text-4xl text-white max-sm:text-xl sm:max-lg:text-3xl ">Software-Technology Development </h2>
