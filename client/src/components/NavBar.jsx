@@ -37,7 +37,7 @@ function NavBar() {
        
       </div>
       </a>
-      <nav className={`flex flex-row md:max-lg:gap-5 gap-6 max-md:hidden   ${!showColor &&'text-white' } `}>
+      <nav className={` flex flex-row md:max-lg:gap-5 gap-6 max-md:hidden   ${!showColor &&'text-white' } `}>
 
         <a href='/' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(1)} onMouseLeave={()=>setHoverAdd(0)}><div>Home {(hoverAdd===1  && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
         <a href='/aboutus' className={`md:max-lg:text-lg font-medium  text-xl ${showColor && 'hover:text-[#755BB4]'}`} onMouseEnter={()=>setHoverAdd(2)} onMouseLeave={()=>setHoverAdd(0)}><div>About-Us {(hoverAdd===2 && !showColor )&& <div className='h-[2px] rounded-full bg-white'></div> }</div></a>
@@ -58,12 +58,12 @@ function NavBar() {
    </div>
    {navb && <div className= {`fixed bg-white h-52 w-[100%] hidden max-md:flex  `}>
         <div className='w-[100%] h-96'>
-        <a href='/contact'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon  sx={{ color:'purple' }}/> Home</div></a> 
-        <a href='/aboutus'><div className='border-b-2 border-dashed hover:text-purple-600  p-1'> <ArrowRightAltIcon />About Us</div></a> 
-          <a href='/service'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon /> Service</div></a> 
-          <a href='/portfolio'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'> <ArrowRightAltIcon />Portfolio</div></a> 
-          <a href='/blog'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon /> Blog</div></a> 
-          <a href='/contact'><div className=' hover:text-purple-600 p-1'><ArrowRightAltIcon /> Contact</div></a> 
+        <a href='/contact'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon  sx={{ color:'#755BB4' }}/> Home</div></a> 
+        <a href='/aboutus'><div className='border-b-2 border-dashed hover:text-purple-600  p-1'> <ArrowRightAltIcon sx={{ color:'#755BB4' }}/>About Us</div></a> 
+          <a href='/service'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon sx={{ color:'#755BB4' }}/> Service</div></a> 
+          <a href='/portfolio'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'> <ArrowRightAltIcon sx={{ color:'#755BB4' }} />Portfolio</div></a> 
+          <a href='/blog'><div className='border-b-2 border-dashed hover:text-purple-600 p-1'><ArrowRightAltIcon sx={{ color:'#755BB4' }}/> Blog</div></a> 
+          <a href='/contact'><div className=' hover:text-purple-600 p-1'><ArrowRightAltIcon sx={{ color:'#755BB4' }}/> Contact</div></a> 
 
         </div>
 
