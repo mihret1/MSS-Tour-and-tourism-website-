@@ -49,6 +49,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import CircleIcon from '@mui/icons-material/Circle';
 // import { IconButton } from "@mui/material";
 
+import { motion } from 'framer-motion';
 
 
 const Home=()=>{
@@ -76,12 +77,17 @@ const Home=()=>{
     return(
       <div className="m-0 flex flex-col gap-10">
          {/* part one */}
-        <div className="h-[665px] shadow-lg	 bg-gradient-to-br from-[#7457b8]  via-[#d2cbef] via-70%  to-[#7E66B9] "   >
+        <div className="h-[665px] shadow-lg	 bg-gradient-to-br from-[#7457b8]  via-[#d2cbef] via-70%  to-[#7E66B9] ">
           <NavBar />
 
           <div className=" flex flex-row gap-2 mx-16 pt-16">
             
-            <div className="">
+            <motion.div 
+                initial={{ scale:0 }}
+                animate={{ scale:1 }}
+                transition={{ duration: 1 }}
+
+             className="">
               <h2 className="font-bold text-4xl text-white max-sm:text-xl sm:max-lg:text-3xl ">Software-Technology Development </h2>
               <h5 className="font-normal  pl-[30px] pr-[160px] pt-4 text-white text-xl leading-6 max-sm:leading-5  max-sm:pl-1	max-sm:pr-1 max-sm:text-lg sm:max-lg:px-1">Softnet is a technology firm specializing in comprehensive technology training, 
                 tailored software development, and end-to-end technology infrastructure solutions.
@@ -93,9 +99,15 @@ const Home=()=>{
                 <a href='/'><div className="lists bg-gradient-to-r from-[#7e63bf] to-white ">Training</div></a>         
               </div>
           
-            </div>
+            </motion.div>
 
-            <img src={img1} className=" w-[500px] h-[400px] mt-10  max-lg:hidden lg:max-xl:w-1/3"/>
+            <motion.img src={img1} 
+             initial={{ scale: 0 }}
+             animate={{ scale: 1 }}
+             transition={{ duration: 1 }}
+            className=" w-[500px] h-[400px] mt-10  max-lg:hidden lg:max-xl:w-1/3 
+            
+            "/>
           
           </div>
 
@@ -103,10 +115,10 @@ const Home=()=>{
          
          {/* part two */}
         <div className=" flex flex-row px-[2%] py-[2%] shadow-lg gap-5 max-lg:flex-col">
-             <img src={img2} className=" w-[53%] max-lg:w-[100%] "/>
+             <img src={img2} className=" w-[53%] max-lg:w-[100%]  "/>
              
              <div className=" flex flex-col gap-7 p-4">
-                <h1 className="font-bold text-3xl ">WHO WE ARE</h1>
+                <h1 className="font-bold text-3xl  ">WHO WE ARE</h1>
                 <span  className="text-[#5c5555]  text-lg  font-semibold ">
                   Softnet is a technology firm specializing in comprehensive technology training, 
                   tailored software development, and end-to-end technology infrastructure solutions.
