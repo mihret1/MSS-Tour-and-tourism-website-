@@ -49,7 +49,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import CircleIcon from '@mui/icons-material/Circle';
 // import { IconButton } from "@mui/material";
 
-import { easeIn, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 const Home=()=>{
