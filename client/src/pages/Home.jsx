@@ -49,7 +49,7 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import CircleIcon from '@mui/icons-material/Circle';
 // import { IconButton } from "@mui/material";
 
-import { motion } from 'framer-motion';
+import { easeIn, motion } from 'framer-motion';
 
 
 const Home=()=>{
@@ -73,6 +73,11 @@ const Home=()=>{
   let num=[1,1,1,1,1,1,1,1,1,1,1];
   const [p,setP]=useState(1)
   const [t,setT]=useState(1)
+  const variants={
+    hidden:{opacity:0, },
+    visible:{opacity:1,  transition:{duration:2,   ease: "easeOut"}}
+
+  }
 
     return(
       <div className="m-0 flex flex-col gap-10">
@@ -83,28 +88,34 @@ const Home=()=>{
           <div className=" flex flex-row gap-2 mx-16 pt-16">
             
             <motion.div 
-                initial={{ scale:0 }}
-                animate={{ scale:1 }}
-                transition={{ duration: 1 }}
+                initial="hidden"
+                animate="visible"
+                variants={{
+                 visible: { opacity: 1, transition:{
+                    staggerChildren: 0.5, duration:1
+                    } },
+                 hidden: { opacity: 0 }, }}
+                 exit={{} }
+                  transition={{   }}
 
              className="">
-              <h2 className="font-bold text-4xl text-white max-sm:text-xl sm:max-lg:text-3xl ">Software-Technology Development </h2>
-              <h5 className="font-normal  pl-[30px] pr-[160px] pt-4 text-white text-xl leading-6 max-sm:leading-5  max-sm:pl-1	max-sm:pr-1 max-sm:text-lg sm:max-lg:px-1">Softnet is a technology firm specializing in comprehensive technology training, 
+              <motion.h2 variants={variants} initial={{ y:-100 }} animate={{ y:0 }} transition={{ duration:1,ease:'easeOut' }} className="font-bold text-4xl text-white max-sm:text-xl sm:max-lg:text-3xl ">Software-Technology Development </motion.h2>
+              <motion.h5 variants={variants} initial={{ y:100 }} animate={{ y:0 }} transition={{ duration:1.5 ,ease:'easeOut'}} className="font-normal  pl-[30px] pr-[160px] pt-4 text-white text-xl leading-6 max-sm:leading-5  max-sm:pl-1	max-sm:pr-1 max-sm:text-lg sm:max-lg:px-1">Softnet is a technology firm specializing in comprehensive technology training, 
                 tailored software development, and end-to-end technology infrastructure solutions.
-                Our mission is to provide creative and innovative technology solutions </h5>
-              <div className=" flex flex-col gap-3 mx-[160px] max-sm:mx-1 mt-5 sm:max-lg:mx-10">
+                Our mission is to provide creative and innovative technology solutions </motion.h5>
+              <motion.div variants={variants} initial={{ y:100 }} animate={{ y:0 }} transition={{ duration:2,ease:'easeOut'  }} className=" flex flex-col gap-3 mx-[160px] max-sm:mx-1 mt-5 sm:max-lg:mx-10">
                 <a href='/'><div className="lists bg-gradient-to-r from-[#765ab7] to-white ">Web Development</div></a>
                 <a href='/'><div className="lists bg-gradient-to-r from-[#7f62c2] to-white ">Mobile Development</div></a>
                 <a href='/'> <div className="lists bg-gradient-to-r from-[#765ab7] to-white">Graphics Designing</div></a>
                 <a href='/'><div className="lists bg-gradient-to-r from-[#7e63bf] to-white ">Training</div></a>         
-              </div>
+              </motion.div>
           
             </motion.div>
 
             <motion.img src={img1} 
-             initial={{ scale: 0 }}
+             initial={{ scale: 0.5 }}
              animate={{ scale: 1 }}
-             transition={{ duration: 1 }}
+             transition={{ duration: 1, }}
             className=" w-[500px] h-[400px] mt-10  max-lg:hidden lg:max-xl:w-1/3 
             
             "/>
@@ -131,20 +142,24 @@ const Home=()=>{
                   <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">positive impact on people`s lives.</span></div>
                 </div>
                <div>
-                <button className="px-6  bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
+                <motion.button
+                  initial={{  }} 
+                  whileHover={{ scale:1.1 }}
+               
+                className="px-6  bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] transition ease-in-out duration-1000 py-2 rounded-md text-white text-lg font-semibold">
                   Read More <ArrowRightAltIcon fontSize="large" />
-                </button>
+                </motion.button>
               </div>
              </div>
         
         </div>
 
          {/* part Three */}
-        <div className="flex flex-col gap-4 py-4 items-center rounded-lg shadow-lg bg-[#E9E0FF] mx-[1.1%]">
-           <h1 className="text-2xl font-normal">Client</h1>
-           <h1 className="text-2xl font-semibold">Brand We Have Empowered</h1>
-           <p className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
-                    This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</p>
+        <motion.div   className="flex flex-col gap-4 py-4 items-center rounded-lg shadow-lg bg-[#E9E0FF] mx-[1.1%]">
+           <motion.h1 initial={{ y:-50 }} animate={{ y:0 }} transition={{ duration:1 }} className="text-2xl font-normal">Client</motion.h1>
+           <motion.h1 initial={{ y:100 }} animate={{ y:0 }} transition={{ duration:1.5 }} className="text-2xl font-semibold">Brand We Have Empowered</motion.h1>
+           <motion.p initial={{ y:100 }} animate={{ y:0 }} transition={{ duration:2 }} className="text-center text-lg">Every Brand We Help Attain Sucess  is Success Story For Us Well Too. We Are Greateful to  
+                    This Client For Believing in Our Work,Giving Us This Opportunity To Help Them Succeded</motion.p>
           
           <div className="w-[90%]  max-md:hidden">
              <Slider {...settings} className="">
@@ -180,7 +195,7 @@ const Home=()=>{
           </div>
 
        
-        </div>  
+        </motion.div>  
         
           {/* part four */}
         <div className="flex flex-col gap-8  p-5">
