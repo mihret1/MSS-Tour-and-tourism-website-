@@ -16,10 +16,8 @@ import BlogDetail from "./pages/BlogDetail"
 
 export default function App() {
   return (
-   <>
-    <BrowserRouter>
-        {/* <NavBar /> */}
-        
+   
+    <BrowserRouter>        
         <Routes>
           <Route  exact={true} path="/" element={<Home />}/>
           <Route path="/home" element={<Home />}/>
@@ -37,7 +35,6 @@ export default function App() {
 
         <Footer />
     </BrowserRouter>
-   </>
   )
 }
 
