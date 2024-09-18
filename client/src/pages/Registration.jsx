@@ -11,6 +11,8 @@ function Registration() {
   const [age,setAge]=useState('')
   const [course,setCourse]=useState('')
   const [site,setSite]=useState('')
+  const [photo,setPhoto]=useState('')
+
   // const [fullname,setFullname]=useState('')
 
 
@@ -35,17 +37,25 @@ function Registration() {
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-5 ">
                    <span className="text-lg font-serif">Phone Number</span>
                    <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
-                   value={fullname} onChange={(e)=>setFullname(e.target.value)} />
+                   value={phone} onChange={(e)=>setPhone(e.target.value)} />
                 </div>
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-5 ">
                    <span className="text-lg font-serif">Email</span>
                    <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
-                   value={fullname} onChange={(e)=>setFullname(e.target.value)} />
+                   value={email} onChange={(e)=>setEmail(e.target.value)} />
                 </div>
                 <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">Course</span>
-                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
-                   value={fullname} onChange={(e)=>setFullname(e.target.value)} />
+                   <select className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
+                     value={course} onChange={(e)=>setCourse(e.target.value)} >
+                     <option value=''></option>
+
+                      <option value='webdevelopmet'>web developmet</option>
+                      <option value='mobiledevelopmet'>mobile developmet</option>
+                      <option value='graphicsdesign'>graphics design</option>
+                      <option value='webdevelopmet'>web developmet</option>
+
+                   </select>
                 </div>
                   <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">Age</span>

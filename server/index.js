@@ -1,7 +1,7 @@
 
 const express= require('express')
 const mongoose=require('mongoose')
-
+const cors=require('cors')
 const traningRoute=require('./src/routes/Traning')
 
 const PORT=1000
