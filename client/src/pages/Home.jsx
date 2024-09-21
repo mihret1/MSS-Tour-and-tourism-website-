@@ -50,6 +50,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 // import { IconButton } from "@mui/material";
 
 import { motion } from 'framer-motion';
+import { duration } from "@mui/material";
 
 
 const Home=()=>{
@@ -104,10 +105,10 @@ const Home=()=>{
                 tailored software development, and end-to-end technology infrastructure solutions.
                 Our mission is to provide creative and innovative technology solutions </motion.h5>
               <motion.div variants={variants} initial={{ y:100 }} animate={{ y:0 }} transition={{ duration:2,ease:'easeOut'  }} className=" flex flex-col gap-3 mx-[160px] max-sm:mx-1 mt-5 sm:max-lg:mx-10">
-                <a href='/'><div className="lists bg-gradient-to-r from-[#765ab7] to-white ">Web Development</div></a>
-                <a href='/'><div className="lists bg-gradient-to-r from-[#7f62c2] to-white ">Mobile Development</div></a>
-                <a href='/'> <div className="lists bg-gradient-to-r from-[#765ab7] to-white">Graphics Designing</div></a>
-                <a href='/'><div className="lists bg-gradient-to-r from-[#7e63bf] to-white ">Training</div></a>         
+                <a href='/servicedetail'><div className="lists bg-gradient-to-r from-[#765ab7] to-white ">Web Development</div></a>
+                <a href='/servicedetail'><div className="lists bg-gradient-to-r from-[#7f62c2] to-white ">Mobile Development</div></a>
+                <a href='/servicedetail'> <div className="lists bg-gradient-to-r from-[#765ab7] to-white">Graphics Designing</div></a>
+                <a href='/servicedetail'><div className="lists bg-gradient-to-r from-[#7e63bf] to-white ">Training</div></a>         
               </motion.div>
           
             </motion.div>
@@ -142,13 +143,15 @@ const Home=()=>{
                   <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold text-[#5c5555]">positive impact on people`s lives.</span></div>
                 </div>
                <div>
+                <a href='/aboutus'>
                 <motion.button
-                  initial={{  }} 
-                  whileHover={{ scale:1.1 }}
+                  initial={{  }}
+                  whileHover={{ scale:1.2 }}
                
                 className="px-6  bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] transition ease-in-out duration-1000 py-2 rounded-md text-white text-lg font-semibold">
                   Read More <ArrowRightAltIcon fontSize="large" />
                 </motion.button>
+                </a>
               </div>
              </div>
         
@@ -278,13 +281,16 @@ const Home=()=>{
                   <div> <ArrowRightIcon fontSize="large" sx={{color:'#755BB4'}}/> <span className="text-md font-semibold ">positive impact on people`s lives.</span></div>
             </div>
             <div className="flex flex-row gap-3">
+              <a href="/register">
             <button className="px-6 bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
                   Register 
             </button>
-
+            </a>
+            <a href='/servicedetail'>
             <button className="px-6  bg-gradient-to-r from-[#784983] to-[#bcabe3] hover:bg-gradient-to-r hover:from-[#bcabe3] hover:to-[#784983] py-2 rounded-md text-white text-lg font-semibold">
                   Read More 
             </button>
+            </a>
             </div>
           </div>
         </div>
@@ -382,7 +388,7 @@ const Home=()=>{
         <img src={news}/>
         <div className="flex flex-row max-sm:flex-col sm:max-ml:grid sm:max-ml:grid-cols-2 w-[80%]  gap-10">
            <div className=" try">
-            <a href="/">
+            <a href="/blogdetail">
             <img src={i5} className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
               <img src={cal1} className="w-10 h-10"/>
@@ -394,7 +400,7 @@ const Home=()=>{
            </div>
 
            <div  className="try" >
-           <a href="/">
+           <a href="/blogdetail">
             <img src={i2}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
              <img src={cal1} className="w-10 h-10"/>
@@ -406,7 +412,7 @@ const Home=()=>{
            </div>
 
            <div className="try">
-           <a href="/">
+           <a href="/blogdetail">
             <img src={i5}  className="w-[100%]"/>
              <div className="bg-[#E9E0FF] p-3">
              <img src={cal1} className="w-10 h-10"/>

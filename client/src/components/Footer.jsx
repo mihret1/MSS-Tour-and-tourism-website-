@@ -46,21 +46,22 @@ function Footer() {
 
         <div className=' flex  flex-col gap-5 text-lg justify-self-center '>
           <h1 className='text-2xl font-semibold '> Service</h1>
-          <p>Custom Development</p>
-          <p>Web development</p>
-          <p>App development</p>
-          <p>Creative Graphics</p>
-          <p>Training</p>
+          <p><a href='/servicedetail'>Custom Development</a></p>
+          <p><a href='/servicedetail'>Web development</a></p>
+          <p><a href='/servicedetail'>App development</a></p>
+          <p><a href='/servicedetail'>Creative Graphics</a></p>
+          <p><a href='/servicedetail'>Training</a></p>
         </div>
 
         <div className=' flex  flex-col gap-3 text-lg  justify-self-center	'>
           <h1 className='text-2xl font-semibold '> Links</h1>
+          
+          <p>  <a href='/register'>Register</a></p>
           <p>  <a href='/home'>Home</a></p>
-          <p>  <a href='/home'>About us</a></p>
-          <p>  <a href='/home'>Services</a></p>
-          <p>  <a href='/home'>Porfolio</a></p>
-          <p>  <a href='/home'>Blog</a></p>
-          <p>  <a href='/home'>Contact</a></p>
+          <p>  <a href='/aboutus'>About us</a></p>
+          <p>  <a href='/service'>Services</a></p>
+          <p>  <a href='/portfolio'>Porfolio</a></p>
+          <p>  <a href='/blog'>Blog</a></p>
 
         </div>
         

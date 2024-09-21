@@ -65,12 +65,12 @@ function Registration() {
                 </div>
                   <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">Site</span>
-                   <input className="outline-[#d0cadc] bg-slate-100 h-10"
+                   <input className="outline-[#d0cadc] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 </div>
                   <div className="flex flex-col w-[450px] max-lg:w-[80%] gap-3 pb-6 ">
                    <span className="text-lg font-serif">File</span>
-                   <input className="outline-[#a796cb] bg-slate-100 h-10"
+                   <input className="outline-[#a796cb] bg-[#D9D9D9] h-10"
                    value={fullname} onChange={(e)=>setFullname(e.target.value)} />
                 </div>
                 <button className="w-40 rounded-md bg-black py-3 text-white text-lg bg-gradient-to-r from-[#755BB4]  to-[#a493ce] hover:bg-gradient-to-r hover:from-[#a493ce] hover:to-[#755BB4]">Register</button>
